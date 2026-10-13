@@ -34,6 +34,13 @@ function App() {
             <Route path="/" element={<Beranda />} />
           </Routes>
           */}
+          <Routes>
+            <Route path="/" element={<Beranda />} />
+            <Route path="/profil" element={<Profil />} />
+            <Route path="/pendidikan" element={<Pendidikan />} />
+            <Route path="/mahasiswa" element={<Mahasiswa />} />
+            <Route path="/riset" element={<Riset />} />
+          </Routes>
 
         </main>
          {/* TODO 4 SideBar */}
