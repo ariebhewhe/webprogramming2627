@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 // TODO 11
 function SideBar() {
   return (
@@ -14,7 +16,7 @@ function SideBar() {
         2010 sees the redesign of our website. Take a look around and let us know
         what you think.
         <br />
-        <a href="#">Read more</a>
+        <Link to="/berita">Read more</Link>
       </div>
 
       <br />
