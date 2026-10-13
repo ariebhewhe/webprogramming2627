@@ -1,5 +1,5 @@
 //import './assets/style.css';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom'; //NOTE: ADA KESALAHAN TADI 
 //import { Routes, Route } from 'react-router-dom';
 
 // TODO 1  Import Komponen Layout (Header, SideBar, Footer)
