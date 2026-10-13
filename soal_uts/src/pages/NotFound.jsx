@@ -1,4 +1,4 @@
-function NotFound() {
+export default function NotFound() {
   return (
     <div>
       <h2 style={{ marginTop: 0 }}>Halaman Tidak Ditemukan</h2>
@@ -6,5 +6,4 @@ function NotFound() {
     </div>
   );
 }
-export default NotFound;
 //lakukan commit & push
