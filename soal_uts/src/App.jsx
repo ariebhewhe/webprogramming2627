@@ -1,19 +1,19 @@
 import './assets/style.css';
 import { Routes, Route } from 'react-router-dom';
 
-import Header from './components/layout/Header.jsx';
-import SideBar from './components/layout/SideBar.jsx';
-import Footer from './components/layout/Footer.jsx';
+import Header from './components/layout/Header';
+import SideBar from './components/layout/SideBar';
+import Footer from './components/layout/Footer';
 // lakukan commit "selesai TODO 1" dan push 
 
-import Beranda from './pages/Beranda.jsx';
-import Profil from './pages/Profil.jsx';
-import Pendidikan from './pages/Pendidikan.jsx';
-import Riset from './pages/Riset.jsx';
-import Mahasiswa from './pages/Mahasiswa.jsx';
-import Lainlain from './pages/LainLain.jsx';
-import Berita from './pages/Berita.jsx';
-import NotFound from './pages/NotFound.jsx';
+import Beranda from './pages/Beranda';
+import Profil from './pages/Profil';
+import Pendidikan from './pages/Pendidikan';
+import Riset from './pages/Riset';
+import Mahasiswa from './pages/Mahasiswa';
+import Lainlain from './pages/LainLain';
+import Berita from './pages/Berita';
+import NotFound from './pages/NotFound';
 // lakukan commit "selesai TODO 2" dan push 
 
 function App() {
@@ -43,5 +43,4 @@ function App() {
 }
 
 export default App;
-
-// TODO 7 lakukan commit dengan nama "selesai TODO 7" dan push 
+// TODO 7 lakukan commit dengan nama "selesai TODO 7" dan push
