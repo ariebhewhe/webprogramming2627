@@ -7,12 +7,12 @@ import Footer from './components/layout/Footer';
 // lakukan commit "selesai TODO 1" dan push 
 
 import Beranda from './pages/Beranda';
+import Berita from './pages/Berita';
 import Profil from './pages/Profil';
 import Pendidikan from './pages/Pendidikan';
 import Riset from './pages/Riset';
 import Mahasiswa from './pages/Mahasiswa';
 import Lainlain from './pages/LainLain';
-import Berita from './pages/Berita';
 import NotFound from './pages/NotFound';
 // lakukan commit "selesai TODO 2" dan push 
 
