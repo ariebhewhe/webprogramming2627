@@ -23,5 +23,4 @@ function SideBar() {
     </aside>
   );
 }
-
 export default SideBar;
