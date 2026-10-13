@@ -3,10 +3,13 @@ function LainLain() {
     <div>
       <h2 style={{ marginTop: 0 }}>Informasi Lain-Lain</h2>
       <p>
-        Halaman ini berisi informasi tambahan, pengumuman jadwal akademik, layanan fasilitas kampus, dan panduan administrasi bagi mahasiswa aktif maupun calon mahasiswa.
+        Halaman ini berisi informasi tambahan, pengumuman jadwal akademik,
+        layanan fasilitas kampus, dan panduan administrasi bagi mahasiswa aktif
+        maupun calon mahasiswa.
       </p>
       <p>
-        Untuk informasi lebih lanjut, silakan hubungi bagian tata usaha program studi.
+        Untuk informasi lebih lanjut, silakan hubungi bagian tata usaha program
+        studi.
       </p>
     </div>
   );
