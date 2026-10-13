@@ -1,4 +1,4 @@
-function Pendidikan() {
+export default function Pendidikan() {
   return (
     <div>
       <h2 style={{ marginTop: 0 }}>Kurikulum & Pendidikan</h2>
@@ -17,4 +17,3 @@ function Pendidikan() {
     </div>
   );
 }
-export default Pendidikan;
