@@ -20,6 +20,7 @@ function App() {
         <main className="content-area"></main>
         <SideBar />
       </div>
+      <Footer />
     </div>
   );
 }
