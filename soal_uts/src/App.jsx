@@ -1,13 +1,18 @@
 import './assets/style.css';
-// TODO 1  Import Komponen Layout (Header, SideBar, Footer)
 import { Routes, Route } from 'react-router-dom';
 import Header from './components/layout/Header.jsx';
 import SideBar from './components/layout/SideBar.jsx';
 import Footer from './components/layout/Footer.jsx';
+import Beranda from './pages/Beranda.jsx';
+import Profil from './pages/Profil.jsx';
+import Mahasiswa from './pages/Mahasiswa.jsx';
+import LainLain from './pages/LainLain.jsx';
+import Pendidikan from './pages/Pendidikan.jsx';
+import Riset from './pages/Riset.jsx';
+// TODO 1  Import Komponen Layout (Header, SideBar, Footer)
 // lakukan commit "selesai TODO 1" dan push 
 
 // TODO 2  komponen Pages (Beranda, Profil, dll)
-
 // lakukan commit "selesai TODO 2" dan push 
 
 function App() {
