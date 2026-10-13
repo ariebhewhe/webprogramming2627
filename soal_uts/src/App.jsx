@@ -3,9 +3,9 @@
 import './assets/style.css';
 import { Routes, Route } from 'react-router-dom';
 // TODO 1  Import Komponen Layout (Header, SideBar, Footer)
-import Header from './Header'
-import SideBar from './SideBar'
-import Footer from './assets/component/Footer.jsx' 
+import Header from './components/layout/Header.jsx'
+import SideBar from './components/layout/SideBar.jsx'
+import Footer from './components/layout/Footer.jsx'
 // lakukan commit "selesai TODO 1" dan push 
 
 // TODO 2  komponen Pages (Beranda, Profil, dll)
@@ -14,6 +14,7 @@ import LainLain from './pages/LainLain.jsx'
 import Mahasiswa from './pages/Mahasiswa.jsx'
 import Profil from './pages/Profil.jsx'
 import Riset from './pages/Riset.jsx'
+import NotFound from './pages/Berita.jsx'
 // lakukan commit "selesai TODO 2" dan push 
 
 function App() {
@@ -26,7 +27,14 @@ function App() {
         <main className="content-area">
         
           <Routes>
-            <Route path="/" element={<Beranda />} />
+           <Route path="/" element={<Beranda />} />
+            <Route path="/profil" element={<Profil />} />
+            <Route path="/pendidikan" element={<Pendidikan />} />
+            <Route path="/riset" element={<Riset />} />
+            <Route path="/mahasiswa" element={<Mahasiswa />} />
+            <Route path="/lainlain" element={<LainLain />} />
+            <Route path="/berita" element={<Berita />} />
+            <Route path="/notfound" element={<NotFound />} />
           </Routes>
           
         </main>
