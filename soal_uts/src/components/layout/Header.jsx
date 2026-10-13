@@ -20,6 +20,7 @@ export default function Header() {
         <NavLink to="/" end>
           Beranda
         </NavLink>
+        <NavLink to="/profil">Beranda</NavLink>
         <NavLink to="/profil">Profil</NavLink>
         <NavLink to="/pendidikan">Pendidikan</NavLink>
         <NavLink to="/mahasiswa">Mahasiswa</NavLink>
