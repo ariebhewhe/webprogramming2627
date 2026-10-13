@@ -1,8 +1,11 @@
 //import './assets/style.css';
 //import { Routes, Route } from 'react-router-dom';
-
+import './assets/style.css';
+import { Routes, Route } from 'react-router-dom';
 // TODO 1  Import Komponen Layout (Header, SideBar, Footer)
-
+import Header from './Header'
+import SideBar from './SideBar'
+mport Footer from './assets/component/Footer.jsx' 
 // lakukan commit "selesai TODO 1" dan push 
 
 // TODO 2  komponen Pages (Beranda, Profil, dll)
