@@ -3,6 +3,14 @@ import { Routes, Route } from "react-router-dom";
 import Header from "./components/layout/Header.jsx";
 import SideBar from "./components/layout/SideBar.jsx";
 import Footer from "./components/layout/Footer.jsx";
+import Beranda from "./pages/Beranda.jsx";
+import Berita from "./pages/Berita.jsx;";
+import Berita from "./pages/LainLain.jsx";
+import Berita from "./pages/Mahasiswa.jsx";
+import Berita from "./pages/NotFound.jsx";
+import Berita from "./pages/Pendidikan.jsx";
+import Berita from "./pages/Profil.jsx";
+import Berita from "./pages/Riset.jsx";
 
 function App() {
   return (
