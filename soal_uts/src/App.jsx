@@ -13,6 +13,9 @@ import LainLain from './pages/LainLain.jsx';
 import Mahasiswa from './pages/Mahasiswa.jsx';
 import Pendidikan from './pages/Pendidikan.jsx';
 import Riset from './pages/Riset.jsx';
+import Berita from './pages/Berita.jsx';
+import NotFound from './pages/NotFound.jsx';
+
 
 function App() {
   return (
@@ -24,10 +27,12 @@ function App() {
           <Routes>
             <Route path="/" element={<Beranda />} />
             <Route path="/profil" element={<Profil />} />
+            <Route path="/lain-lain" element={<LainLain />} />
             <Route path="/pendidikan" element={<Pendidikan />} />
             <Route path="/mahasiswa" element={<Mahasiswa />} />
             <Route path="/riset" element={<Riset />} />
-            <Route path="/lain-lain" element={<LainLain />} />
+            <Route path="/berita" element={<Berita />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </main>
 
