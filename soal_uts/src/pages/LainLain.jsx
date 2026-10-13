@@ -13,4 +13,4 @@ function LainLain(){
   );
 }
 
-export default LainLain
+export default LainLain;
