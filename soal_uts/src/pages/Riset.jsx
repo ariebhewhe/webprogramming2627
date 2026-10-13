@@ -16,4 +16,4 @@ function Riset() {
   );
 }
 
-export default Riset
+export default Riset;
