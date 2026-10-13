@@ -22,11 +22,15 @@ function App() {
       <Header />
       <div className="main-wrapper">
         <main className="content-area">
-          {/* TODO 6 Routes 
           <Routes>
             <Route path="/" element={<Beranda />} />
+            <Route path="/profil" element={<Profil />} />
+            <Route path="/mahasiswa" element={<Mahasiswa />} />
+            <Route path="/lain-lain" element={<LainLain />} />
+            <Route path="/pendidikan" element={<Pendidikan />} />
+            <Route path="/riset" element={<Riset />} />
           </Routes>
-          */}
+
 
         </main>
           <SideBar />
