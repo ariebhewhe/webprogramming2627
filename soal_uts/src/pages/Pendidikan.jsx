@@ -17,5 +17,4 @@ function Pendidikan() {
     </div>
   );
 }
-
 export default Pendidikan;
