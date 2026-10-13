@@ -18,6 +18,8 @@ function Header(){
                 <NavLink to="/profil">Profil</NavLink>
                 <NavLink to="/pendidikan">Pendidikan</NavLink>
                 <NavLink to="/mahasiswa">Mahasiswa</NavLink>
+                <NavLink to="/riset">Riset</NavLink>
+                <NavLink to="/lain-lain">Lain-Lain</NavLink>
             </nav>
         </header>
     );
