@@ -18,7 +18,7 @@ export default function Header() {
       </div>
 
       <nav className="nav-menu">
-        <NavLink to="/">Beranda</NavLink>
+        <NavLink to="/beranda">Beranda</NavLink>
         <NavLink to="/berita">Berita</NavLink>
         <NavLink to="/lain-lain">Lain-Lain</NavLink>
         <NavLink to="/mahasiswa">Mahasiswa</NavLink>
