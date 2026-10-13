@@ -24,17 +24,27 @@ function App() {
     
     <div className="container">
       {/* TODO 3 Header */}
+      <Header />
       <div className="main-wrapper">
         <main className="content-area">
-          {/* TODO 6 Routes 
+          {/* TODO 6 Routes */}
           <Routes>
             <Route path="/" element={<Beranda />} />
+            <Route path="/profil" element={<Profil />} />
+            <Route path="/pendidikan" element={<Pendidikan />} />
+            <Route path="/riset" element={<Riset />} />
+            <Route path="/mahasiswa" element={<Mahasiswa />} />
+            <Route path="/berita" element={<Berita />} />
+            <Route path="/lainnya" element={<Lainlain />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
-          */}
+          
         </main>
          {/* TODO 4 SideBar */}
+        <SideBar />
       </div>
       {/* TODO 5 Footer */}
+      <Footer />
       
     </div>
   );
