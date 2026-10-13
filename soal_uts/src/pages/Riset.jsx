@@ -3,7 +3,9 @@ function Riset() {
     <div>
       <h2 style={{ marginTop: 0 }}>Fokus Riset</h2>
       <p>
-        Dosen dan mahasiswa kami aktif melakukan berbagai penelitian inovatif di bidang teknologi informasi guna memberikan solusi nyata bagi permasalahan di masyarakat dan industri.
+        Dosen dan mahasiswa kami aktif melakukan berbagai penelitian inovatif di
+        bidang teknologi informasi guna memberikan solusi nyata bagi
+        permasalahan di masyarakat dan industri.
       </p>
       <p>
         Beberapa grup riset yang tersedia antara lain:
@@ -16,4 +18,3 @@ function Riset() {
 }
 
 export default Riset;
-
