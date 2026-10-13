@@ -28,11 +28,16 @@ function App() {
             <Route path="/" element={<Beranda />} />
           </Routes>
           */}
+          <Routes>
+            <Route path="/" element={<Beranda />} />
+            <Route path="/profil" element={<Profil />} />
+          </Routes>
         </main>
          {/* TODO 4 SideBar */}
+         <SideBar />
       </div>
       {/* TODO 5 Footer */}
-      
+      <Footer />
     </div>
   );
 }
