@@ -1,7 +1,13 @@
 // TODO 9
+import { NavLink } from 'react-router-dom';
+import bgGambar from '../../assets/header-bg.png';
 function Header(){
     return (
-        <header className="header-area" style={{ backgroundImage: `url(${bgGambar})`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
+        <header className="header-area" style={{ 
+            backgroundImage: `url(${bgGambar})`,
+             backgroundSize: 'cover', 
+             backgroundPosition: 'center', 
+             backgroundRepeat: 'no-repeat' }}>
             <div className="header-text">
                 <h1>Prodi Informatika</h1>
                 <p>Universitas Matana.</p>
@@ -13,6 +19,7 @@ function Header(){
     );
     
 }
+export default Header;
 // 1. Import { NavLink } dari 'react-router-dom'
 // 2. Import gambar dari folder assets: header-bg.png beri nama bgGambar
 // 3. Buat component function dengan nama Header
