@@ -8,6 +8,12 @@ import Footer from "./components/Footer"
 // lakukan commit "selesai TODO 1" dan push 
 
 // TODO 2  komponen Pages (Beranda, Profil, dll)
+import Beranda from "./pages/Beranda"
+import Profil from "./pages/Profil"
+import LainLain from "./pages/LainLain"
+import Mahasiswa from "./pages/Mahasiswa"
+import Pendidikan from "./pages/Pendidika"
+import Riset from "./pages/Riset"
 // lakukan commit "selesai TODO 2" dan push 
 
 function App() {
