@@ -30,3 +30,4 @@ function riset() {
       </p>
     </div>
 }
+export default Riset;
