@@ -2,7 +2,7 @@
 // 1. Import { NavLink } dari 'react-router-dom'
 // 2. Import gambar dari folder assets: header-bg.png beri nama bgGambar
 import { NavLink } from 'react-router-dom';
-import bgGambar from '../assets/header-bg.png';
+import bgGambar from '/assets/header-bg.png';
 
 
 
