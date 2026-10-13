@@ -9,7 +9,7 @@
 // 5. lakukan push dan commit "selesai TODO 9" dengan todo 9
 
 import { NavLink } from "react-router-dom";
-import bgGambar from "./assets/header-bg"
+import bgGambar from "../../assets/header-bg.png";
 
 export default function Header () {
     return (
@@ -33,3 +33,4 @@ export default function Header () {
         </header>
     );
 }
+
