@@ -12,12 +12,17 @@ import Pendidikan from "./pages/Pendidikan.jsx";
 import Profil from "./pages/Profil.jsx";
 import Riset from "./pages/Riset.jsx";
 
+// TODO 2  komponen Pages (Beranda, Profil, dll)
+// lakukan commit "selesai TODO 2" dan push
+
 function App() {
   return (
     <div className="container">
+      {/* TODO 3 Header */}
       <Header />
       <div className="main-wrapper">
         <main className="content-area">
+          {/* TODO 6 Routes: konfigurasi routing untuk setiap halaman */}
           <Routes>
             <Route path="/" element={<Beranda />} />
             <Route path="/profil" element={<Profil />} />
@@ -29,11 +34,15 @@ function App() {
             <Route path="*" element={<NotFound />} />
           </Routes>
         </main>
+        {/* TODO 4 SideBar */}
         <SideBar />
       </div>
+      {/* TODO 5 Footer */}
       <Footer />
     </div>
   );
 }
 
 export default App;
+
+// TODO 7 lakukan commit dengan nama "selesai TODO 7" dan push
