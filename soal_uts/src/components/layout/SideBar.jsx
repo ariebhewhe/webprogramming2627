@@ -15,7 +15,11 @@ export default function SideBar() {
       </div>
       <br />
       <h3>Pencarian</h3>
-      <input type="text" placeholder="Enter keywords..." />
+      <input
+        type="text"
+        placeholder="Enter keywords..."
+        style={{ padding: "5px", width: "100%" }}
+      />
     </aside>
   );
 }
