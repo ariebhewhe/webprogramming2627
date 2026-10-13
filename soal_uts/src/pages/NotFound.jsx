@@ -1,4 +1,4 @@
-function NotFound (){
+function NotFound(){
     return (
         <div>
             <h2 style={{marginTop:'0'}}>Page Not Found!</h2>
