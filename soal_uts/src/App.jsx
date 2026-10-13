@@ -10,11 +10,11 @@ import Footer from './components/layout/Footer';
 
 // TODO 2  komponen Pages (Beranda, Profil, dll)
 import Beranda from './pages/Beranda';
-import LainLain from './pages/Beranda';
-import Mahasiswa from './pages/Beranda';
-import Pendidikan from './pages/Beranda';
-import Profile from './pages/Beranda';
-import Riset from './pages/Beranda';
+import LainLain from './pages/LainLain';
+import Mahasiswa from './pages/Mahasiswa';
+import Pendidikan from './pages/Pendidikan';
+import Profile from './pages/Profil';
+import Riset from './pages/Riset';
 
 // lakukan commit "selesai TODO 2" dan push 
 
@@ -25,11 +25,11 @@ function App() {
       <Header /> 
       <div className="main-wrapper">
         <main className="content-area">
-          {/* TODO 6 Routes 
+          {/* TODO 6 Routes */ 
           <Routes>
-            <Route path="/" element={<Beranda />} />
+            <Route path="./pages/Beranda" element={<Beranda />} />
           </Routes>
-          */}
+          }
         </main>
          {/* TODO 4 SideBar */}
       </div>
