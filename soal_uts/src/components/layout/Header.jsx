@@ -28,9 +28,14 @@ export default function Header () {
             </div>
 
             <nav className="nav-menu">
-                <NavLink to="/">Beranda</NavLink>
+                <NavLink to="/Beranda">Beranda</NavLink>
+                <NavLink to="/Profil">Profil</NavLink>
+                <NavLink to="/Pendidikan">Pendidikan</NavLink>
+                <NavLink to="/Berita">Berita</NavLink>
+                <NavLink to="/Riset">Riset</NavLink>
+                <NavLink to="/Mahasiswa">Mahasiswa</NavLink>
+                <NavLink to="/LainLain">LainLain</NavLink>
             </nav>
         </header>
     );
 }
-

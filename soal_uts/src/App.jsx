@@ -14,6 +14,7 @@ import LainLain from "./pages/LainLain"
 import Mahasiswa from "./pages/Mahasiswa"
 import Pendidikan from "./pages/Pendidikan"
 import Riset from "./pages/Riset"
+import Berita from './pages/Berita';
 // lakukan commit "selesai TODO 2" dan push 
 
 function App() {
@@ -26,7 +27,13 @@ function App() {
         <main className="content-area">
           {/* TODO 6 Routes */
           <Routes>
-            <Route path="/" element={<Beranda />} />
+            <Route path="/Beranda" element={<Beranda />} />
+            <Route path="/Profil" element={<Profil />} />
+            <Route path="/Pendidikan" element={<Pendidikan />} />
+            <Route path="/Berita" element={<Berita />} />
+            <Route path="/Riset" element={<Riset />} />
+            <Route path="/Mahasiswa" element={<Mahasiswa />} />
+            <Route path="/LainLain" element={<LainLain />} />
           </Routes>
           }
         </main>
