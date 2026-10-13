@@ -18,6 +18,7 @@ function App() {
       <Header />
       <div className="main-wrapper">
         <main className="content-area"></main>
+        <SideBar />
       </div>
     </div>
   );
