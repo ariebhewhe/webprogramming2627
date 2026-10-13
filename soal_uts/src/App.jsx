@@ -4,29 +4,21 @@ import Header from "./components/layout/Header.jsx";
 import SideBar from "./components/layout/SideBar.jsx";
 import Footer from "./components/layout/Footer.jsx";
 import Beranda from "./pages/Beranda.jsx";
-import Berita from "./pages/Berita.jsx;";
-import Berita from "./pages/LainLain.jsx";
-import Berita from "./pages/Mahasiswa.jsx";
-import Berita from "./pages/NotFound.jsx";
-import Berita from "./pages/Pendidikan.jsx";
-import Berita from "./pages/Profil.jsx";
-import Berita from "./pages/Riset.jsx";
+import Berita from "./pages/Berita.jsx";
+import LainLain from "./pages/LainLain.jsx";
+import Mahasiswa from "./pages/Mahasiswa.jsx";
+import NotFound from "./pages/NotFound.jsx";
+import Pendidikan from "./pages/Pendidikan.jsx";
+import Profil from "./pages/Profil.jsx";
+import Riset from "./pages/Riset.jsx";
 
 function App() {
   return (
     <div className="container">
       <Header />
       <div className="main-wrapper">
-        <main className="content-area">
-          {/* TODO 6 Routes 
-          <Routes>
-            <Route path="/" element={<Beranda />} />
-          </Routes>
-          */}
-        </main>
-        <SideBar />
+        <main className="content-area"></main>
       </div>
-      <Footer />
     </div>
   );
 }
