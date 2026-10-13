@@ -18,7 +18,16 @@ function App() {
       <Header />
       <div className="main-wrapper">
         <main className="content-area">
-          <Routes></Routes>
+          <Routes>
+            <Route path="/" element={<Beranda />} />
+            <Route path="/profil" element={<Profil />} />
+            <Route path="/pendidikan" element={<Pendidikan />} />
+            <Route path="/mahasiswa" element={<Mahasiswa />} />
+            <Route path="/riset" element={<Riset />} />
+            <Route path="/lain-lain" element={<LainLain />} />
+            <Route path="/berita" element={<Berita />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
         </main>
         <SideBar />
       </div>
