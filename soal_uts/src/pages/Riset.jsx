@@ -16,5 +16,4 @@ function Riset() {
     </div>
   );
 }
-
 export default Riset;
