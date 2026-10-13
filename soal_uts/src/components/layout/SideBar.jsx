@@ -1,4 +1,4 @@
-function SideBar() {
+export default function SideBar() {
   return (
     <aside className="sidebar-area">
       <h3>Berita Terbaru</h3>
@@ -23,4 +23,3 @@ function SideBar() {
     </aside>
   );
 }
-export default SideBar;
