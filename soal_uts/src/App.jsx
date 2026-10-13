@@ -34,7 +34,7 @@ function App() {
             <Route path="./pages/LainLain" element={<LainLain />} />
           </Routes>
         </main>
-         {/* TODO 4 SideBar */}
+        <SideBar />
       </div>
       {/* TODO 5 Footer */}
       
