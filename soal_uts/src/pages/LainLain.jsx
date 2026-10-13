@@ -1,5 +1,9 @@
 // TODO 10
 // 1. Buat component  function dengan nama LainLain
+function LainLain (){
+
+}
+export default LainLain;
 /*
  2. isi adalah sebagai berikut 
 <div>

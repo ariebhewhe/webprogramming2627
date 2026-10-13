@@ -1,5 +1,9 @@
 // TODO 14
 //  Buat component  function dengan nama Pendidikan
+function Pendidikan (){
+
+}
+export default Pendidikan;
 /*
  <div>
       <h2 style={{ marginTop: 0 }}>Kurikulum & Pendidikan</h2>

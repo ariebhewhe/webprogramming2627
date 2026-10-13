@@ -1,5 +1,9 @@
 // TODO 13
 // Buat component  function dengan nama Mahasiswa
+function Mahasiswa (){
+
+}
+export default Mahasiswa;
 /*
  <div>
       <h2 style={{ marginTop: 0 }}>Kegiatan Mahasiswa</h2>
