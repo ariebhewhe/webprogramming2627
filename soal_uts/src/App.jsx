@@ -11,7 +11,7 @@ import Beranda from './pages/Beranda';
 import LainLain from './pages/LainLain';
 import Mahasiswa from './pages/Mahasiswa';
 import Pendidikan from './pages/Pendidikan';
-import Profile from './pages/Profil';
+import Profil from './pages/Profil';
 import Riset from './pages/Riset';
 
 function App() {
@@ -23,12 +23,12 @@ function App() {
 
         <main className="content-area">
           <Routes>
-            <Route path="./pages/Beranda" element={<Beranda />} />
-            <Route path="./pages/Profil" element={<Profile />} />
-            <Route path="./pages/Pendidikan" element={<Pendidikan />} />
-            <Route path="./pages/Riset" element={<Riset />} />
-            <Route path="./pages/Mahasiswa" element={<Mahasiswa />} />
-            <Route path="./pages/LainLain" element={<LainLain />} />
+            <Route path="/" element={<Beranda />} />
+            <Route path="/" element={<Profil />} />
+            <Route path="/" element={<Pendidikan />} />
+            <Route path="/" element={<Riset />} />
+            <Route path="/" element={<Mahasiswa />} />
+            <Route path="/" element={<LainLain />} />
           </Routes>
         </main>
 
