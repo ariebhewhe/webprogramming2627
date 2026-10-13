@@ -16,10 +16,12 @@ export default function Header() {
         <h1>ProdiInformatika</h1>
         <p>Universitas Matana.</p>
       </div>
+
       <nav className="nav-menu">
         <NavLink to="/" end>
           Beranda
         </NavLink>
+
         <NavLink to="/profil">Beranda</NavLink>
         <NavLink to="/profil">Profil</NavLink>
         <NavLink to="/pendidikan">Pendidikan</NavLink>
