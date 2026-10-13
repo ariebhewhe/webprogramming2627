@@ -3,7 +3,11 @@
 
 // TODO 1  Import Komponen Layout (Header, SideBar, Footer)
 
-// lakukan commit "selesai TODO 1" dan push 
+import Header from 'Header.jsx'
+import SideBar from 'SideBar.jsx'
+import Footer from 'Footer.jsx'
+
+// lakukan commit "selesai TODO 1" dan push
 
 // TODO 2  komponen Pages (Beranda, Profil, dll)
 
