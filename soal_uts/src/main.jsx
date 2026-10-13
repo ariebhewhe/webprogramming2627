@@ -9,7 +9,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
      {/* TODO 8 App   
      <App /> 
      */}
-      
+     <App />
     </BrowserRouter>
   </React.StrictMode>,
 )
