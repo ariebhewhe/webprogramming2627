@@ -6,7 +6,7 @@
 //    - Buat paragraf kedua (<p>) berisi teks: "Teknik Informatika Merupakan Salah Satu Jurusan Pendidikan Tingkat Perguruan Tinggi Yang Mempelajari Serta Menerapkan Prinsip-Prinsip Ilmu Komputer."
 // 3. Lakukan commit dan push dengan pesan "Selesai TODO 12"
 
-function Beranda() {
+export default function Beranda() {
     return (
         <div>
             <h2 style={{ marginTop: 0 }}>Halaman Beranda</h2>
@@ -19,5 +19,3 @@ function Beranda() {
         </div>
     );
 }
-
-export default Beranda;

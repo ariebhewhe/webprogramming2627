@@ -13,7 +13,7 @@ import bgGambar from '../../assets/header-bg.png';
 //    - Di bawah header-text ada <nav> className="nav-menu" berisi <NavLink> menuju ke "/" dengan label "Beranda"
 // 5. lakukan push dan commit "selesai TODO 9" dengan todo 9
 
-function Header() {
+export default function Header() {
   return (
     <header
       className="header-area"
@@ -42,5 +42,3 @@ function Header() {
     </header>
   );
 }
-
-export default Header;
