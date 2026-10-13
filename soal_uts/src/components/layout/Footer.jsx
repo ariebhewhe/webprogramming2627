@@ -1,4 +1,7 @@
 // TODO 10
+function Footer(){
+    
+}
 // 1. Buat component function dengan nama Footer
 // 2. Di dalam return, buat tag <footer className="footer-area">
 // 3. Isi tag footer tersebut dengan teks persis seperti di bawah ini:

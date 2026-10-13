@@ -1,4 +1,7 @@
 // TODO 11
+function Sidebar(){
+    
+}
 // 1. Buat component function dengan nama SideBar
 // 2. Struktur wajib di dalam return:
 //    - Gunakan elemen <aside className="sidebar-area"> sebagai pembungkus utama.
