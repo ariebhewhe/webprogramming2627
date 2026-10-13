@@ -15,6 +15,8 @@ import Riset from './pages/Riset';
 import Mahasiswa from './pages/Mahasiswa';
 import LainLain from './pages/LainLain';
 import { Route } from 'react-router-dom';
+import Berita from './pages/Berita';
+import NotFound from './pages/NotFound';
 // lakukan commit "selesai TODO 2" dan push 
 
 function App() {
