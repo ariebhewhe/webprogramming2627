@@ -31,7 +31,7 @@ function App() {
           */}
         </main>
          {/* TODO 4 SideBar */}
-        
+        <SideBar />
       </div>
       {/* TODO 5 Footer */}
       
