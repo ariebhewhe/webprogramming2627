@@ -1,6 +1,5 @@
 import './assets/style.css';
-
-//import { Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 
 // TODO 1  Import Komponen Layout (Header, SideBar, Footer)
 import Header from "./components/layout/Header"
