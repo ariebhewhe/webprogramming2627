@@ -16,4 +16,4 @@ function Mahasiswa(){
   );
 }
 
-export default Mahasiswa
+export default Mahasiswa;
