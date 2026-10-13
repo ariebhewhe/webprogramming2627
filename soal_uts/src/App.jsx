@@ -2,6 +2,9 @@
 //import { Routes, Route } from 'react-router-dom';
 
 // TODO 1  Import Komponen Layout (Header, SideBar, Footer)
+import Header from "Header.jsx"
+import SideBar from "SideBar.jsx"
+import Footer from "Footer.jsx"
 
 // lakukan commit "selesai TODO 1" dan push 
 
