@@ -15,6 +15,8 @@ import Pendidikan from './pages/Pendidikan.jsx';
 import Riset from './pages/Riset.jsx';
 import Mahasiswa from './pages/Mahasiswa.jsx';
 import Lainlain from './pages/LainLain.jsx';
+import Berita from './pages/Berita.jsx';
+import NotFound from './pages/NotFound.jsx';
 // lakukan commit "selesai TODO 2" dan push 
 
 function App() {
