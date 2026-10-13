@@ -1,6 +1,13 @@
 // TODO 10
 // 1. Buat component function dengan nama Footer
+export default function Footer() {
+  return (
 // 2. Di dalam return, buat tag <footer className="footer-area">
+<footer className="footer-area">
 // 3. Isi tag footer tersebut dengan teks persis seperti di bawah ini:
 // Copyright © Prodi Informatika | HTML5 | CSS | ReactJS Fundamentals
+Copyright © Prodi Informatika | HTML5 | CSS | ReactJS Fundamentals
+    </footer>
+    );
+}
 // 4. lakukan push dan commit "selesai TODO 10" dengan todo 10
