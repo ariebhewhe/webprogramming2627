@@ -6,6 +6,7 @@ import Header from './components/layout/Header';
 import SideBar from './components/layout/SideBar';
 import Footer from './components/layout/Footer';
 
+
 // TODO 2 
 import Beranda from './pages/Beranda';
 import Berita from './pages/Berita';
