@@ -2,21 +2,19 @@ import './assets/style.css';
 import { Routes, Route } from 'react-router-dom';
 
 // TODO 1  Import Komponen Layout (Header, SideBar, Footer)
-import Header from './components/Header';
-import SideBar from './components/SideBar';
-import Footer from './components/Footer';
+import Header from './components/layout/Header.jsx';
+import SideBar from './components/layout/SideBar.jsx';
+import Footer from './components/layout/Footer.jsx';
 
 // lakukan commit "selesai TODO 1" dan push 
 
 // TODO 2  komponen Pages (Beranda, Profil, dll)
-import Beranda from './pages/Beranda';
-import Profil from './pages/Profil';
-import Pendidikan from './pages/Pendidikan';
-import Riset from './pages/Riset';
-import Mahasiswa from './pages/Mahasiswa';
-import Berita from './pages/Berita';
-import Lainlain from './pages/Lainlain';
-import NotFound from './pages/NotFound';
+import Beranda from './pages/Beranda.jsx';
+import Profil from './pages/Profil.jsx';
+import Pendidikan from './pages/Pendidikan.jsx';
+import Riset from './pages/Riset.jsx';
+import Mahasiswa from './pages/Mahasiswa.jsx';
+import Lainlain from './pages/LainLain.jsx';
 // lakukan commit "selesai TODO 2" dan push 
 
 function App() {
