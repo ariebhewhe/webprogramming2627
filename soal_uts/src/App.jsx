@@ -15,7 +15,6 @@ import Riset from "./pages/Riset.jsx";
 function App() {
   return (
     <div className="container">
-      {/* TODO 3 Header */}
       <Header />
       <div className="main-wrapper">
         <main className="content-area">
