@@ -15,5 +15,4 @@ function Mahasiswa() {
     </div>
   );
 }
-
 export default Mahasiswa;
