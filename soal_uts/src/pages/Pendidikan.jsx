@@ -30,3 +30,4 @@ function Pendidikan() {
       </ul>
     </div>
 }
+export default Pendidikan;
