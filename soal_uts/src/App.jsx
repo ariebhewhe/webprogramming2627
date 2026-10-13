@@ -12,9 +12,6 @@ import Pendidikan from "./pages/Pendidikan.jsx";
 import Profil from "./pages/Profil.jsx";
 import Riset from "./pages/Riset.jsx";
 
-// TODO 2  komponen Pages (Beranda, Profil, dll)
-// lakukan commit "selesai TODO 2" dan push
-
 function App() {
   return (
     <div className="container">
