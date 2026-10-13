@@ -14,5 +14,4 @@ function LainLain() {
     </div>
   );
 }
-
 export default LainLain;
