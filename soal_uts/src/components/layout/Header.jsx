@@ -7,13 +7,17 @@ function Header(){
             backgroundImage: `url(${bgGambar})`,
              backgroundSize: 'cover', 
              backgroundPosition: 'center', 
-             backgroundRepeat: 'no-repeat' }}>
+             backgroundRepeat: 'no-repeat'
+         }}>
             <div className="header-text">
                 <h1>Prodi Informatika</h1>
                 <p>Universitas Matana.</p>
             </div>
             <nav className="nav-menu">
                 <NavLink to="/">Beranda</NavLink>
+                <NavLink to="/profil">Profil</NavLink>
+                <NavLink to="/pendidikan">Pendidikan</NavLink>
+                <NavLink to="/mahasiswa">Mahasiswa</NavLink>
             </nav>
         </header>
     );
