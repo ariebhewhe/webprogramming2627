@@ -2,7 +2,7 @@
 // 1. Import { NavLink } dari 'react-router-dom'
 // 2. Import gambar dari folder assets: header-bg.png beri nama bgGambar
 import { NavLink } from 'react-router-dom';
-import bgGambar from '/assets/header-bg.png';
+import bgGambar from '../../assets/header-bg.png';
 
 
 
@@ -13,7 +13,7 @@ import bgGambar from '/assets/header-bg.png';
 //    - Di bawah header-text ada <nav> className="nav-menu" berisi <NavLink> menuju ke "/" dengan label "Beranda"
 // 5. lakukan push dan commit "selesai TODO 9" dengan todo 9
 
-export default function Header() {
+function Header() {
   return (
     <header
       className="header-area"
@@ -25,16 +25,15 @@ export default function Header() {
       }}
     >
       <div className="header-text">
-        <h1>ProdiInformatika</h1>
-        <p>Universitas Matana.</p>
+        <h1>Prodi Informatika</h1>
+        <p>Universitas Matana</p>
       </div>
-      <nav className="nav-menu" aria-label="Navigasi utama">
-        {links.map(([to, label]) => (
-          <NavLink key={to} to={to} end={to === '/'}>
-            {label}
-          </NavLink>
-        ))}
+
+      <nav className="nav-menu">
+        <NavLink to="/">Beranda</NavLink>
       </nav>
     </header>
-  )
+  );
 }
+
+export default Header;
