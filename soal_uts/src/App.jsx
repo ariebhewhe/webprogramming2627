@@ -34,7 +34,7 @@ function App() {
         <SideBar />
       </div>
       {/* TODO 5 Footer */}
-      
+      <Footer/>
     </div>
   );
 }
