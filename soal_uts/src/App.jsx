@@ -30,7 +30,6 @@ function App() {
             <Route path="*" element={<NotFound />} />
           </Routes>
         </main>
-        {/* TODO 4 SideBar */}
         <SideBar />
       </div>
       {/* TODO 5 Footer */}
