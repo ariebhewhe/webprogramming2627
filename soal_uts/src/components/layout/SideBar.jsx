@@ -10,7 +10,7 @@
 //    - Buat elemen <input type="text" placeholder="Enter keywords..." />. Berikan inline style dengan nilai padding "5px" dan width "100%".
 // 3. Lakukan commit dan push dengan pesan: "Selesai TODO 11"
 
-export default function SideBar() {
+function SideBar() {
   return (
     <aside className="sidebar-area">
         <h3>Berita Terbaru</h3>
@@ -31,3 +31,5 @@ export default function SideBar() {
     </aside>
   )
 }
+
+export default SideBar;
