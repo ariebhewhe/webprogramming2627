@@ -14,14 +14,13 @@ import Pendidikan from './pages/Pendidikan';
 import Profile from './pages/Profil';
 import Riset from './pages/Riset';
 
-// lakukan commit "selesai TODO 2" dan push 
-
 function App() {
   return (
-    
+    // TODO 7
     <div className="container">
       <Header /> 
       <div className="main-wrapper">
+
         <main className="content-area">
           <Routes>
             <Route path="./pages/Beranda" element={<Beranda />} />
@@ -32,8 +31,10 @@ function App() {
             <Route path="./pages/LainLain" element={<LainLain />} />
           </Routes>
         </main>
+
         <SideBar />
       </div>
+
       <Footer />
       
     </div>
@@ -42,5 +43,3 @@ function App() {
 
 
 export default App;
-
-// TODO 7 lakukan commit dengan nama "selesai TODO 7" dan push 
