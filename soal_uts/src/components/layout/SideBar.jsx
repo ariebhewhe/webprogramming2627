@@ -7,20 +7,18 @@ function SideBar() {
         <br />
         <em>January 1st, 2010</em>
       </div>
-
       <div className="news-item">
-        2010 sees the redesign of our website. Take a look around and let us know what you think.
+        2010 sees the redesign of our website. Take a look around and let us
+        know what you think.
         <br />
         <a href="#">Read more</a>
       </div>
-
       <br />
-
       <h3>Pencarian</h3>
       <input
         type="text"
         placeholder="Enter keywords..."
-        style={{ padding: '5px', width: '100%' }}
+        style={{ padding: "5px", width: "100%" }}
       />
     </aside>
   );
