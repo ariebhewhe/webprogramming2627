@@ -14,5 +14,4 @@ function Berita() {
     </div>
   );
 }
-
 export default Berita;
