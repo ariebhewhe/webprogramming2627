@@ -8,7 +8,7 @@
 //    - Beri jarak dengan tag <br />.
 //    - Tambahkan <h3>Pencarian</h3>.
 //    - Buat elemen <input type="text" placeholder="Enter keywords..." />. Berikan inline style dengan nilai padding "5px" dan width "100%".
-// 3. Lakukan commit dan push dengan pesan: "Selesai TODO 11"
+// 3. Lakukan commit dan push dengan pesan: "Selesai TODO 11 "
 
 export default function SideBar() {
     return (
