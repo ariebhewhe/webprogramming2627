@@ -1,5 +1,16 @@
 // TODO 9
 function Header(){
+    return (
+        <header className="header-area" style={{ backgroundImage: `url(${bgGambar})`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
+            <div className="header-text">
+                <h1>Prodi Informatika</h1>
+                <p>Universitas Matana.</p>
+            </div>
+            <nav className="nav-menu">
+                <NavLink to="/">Beranda</NavLink>
+            </nav>
+        </header>
+    );
     
 }
 // 1. Import { NavLink } dari 'react-router-dom'
