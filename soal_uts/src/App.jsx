@@ -9,6 +9,12 @@ import Footer from './components/layout/Footer';
 // lakukan commit "selesai TODO 1" dan push 
 
 // TODO 2  komponen Pages (Beranda, Profil, dll)
+import Beranda from './pages/Beranda';
+import LainLain from './pages/Beranda';
+import Mahasiswa from './pages/Beranda';
+import Pendidikan from './pages/Beranda';
+import Profile from './pages/Beranda';
+import Riset from './pages/Beranda';
 
 // lakukan commit "selesai TODO 2" dan push 
 
