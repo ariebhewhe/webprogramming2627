@@ -17,6 +17,8 @@ import Mahasiswa from './pages/Mahasiswa.jsx'
 import Pendidikan from './pages/Pendidikan.jsx'
 import Profil from './pages/Profil.jsx'
 import Riset from './pages/Riset.jsx'
+import Berita from './pages/Berita.jsx';
+import NotFound from './pages/NotFound.jsx'
 
 // lakukan commit "selesai TODO 2" dan push 
 
@@ -40,6 +42,8 @@ function App() {
             <Route path="/riset" element={<Riset />} />
             <Route path="/mahasiswa" element={<Mahasiswa />} />
             <Route path="/lainlain" element={<LainLain />} />
+            <Route path="/berita" element={<Berita />} />
+            <Route path="/notfound" element={<NotFound />} />
           </Routes>
         </main>
          {/* TODO 4 SideBar */}

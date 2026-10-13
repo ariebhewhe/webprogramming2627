@@ -12,7 +12,7 @@ function SideBar (){
             <div className="news-Item">
                 <em>2010 sees the redesign of our website. Take a look around and let us know what you think.</em>
                 <br />
-                <a href="#">Read more</a>
+                <a href="/berita">Read more</a>
             </div>
             <br />
             <h3>Pencarian</h3>
