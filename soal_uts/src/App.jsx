@@ -9,7 +9,11 @@ import Footer from './assets/component/Footer.jsx'
 // lakukan commit "selesai TODO 1" dan push 
 
 // TODO 2  komponen Pages (Beranda, Profil, dll)
-
+import Beranda from './pages/Beranda.jsx'
+import LainLain from './pages/LainLain.jsx'
+import Mahasiswa from './pages/Mahasiswa.jsx'
+import Profil from './pages/Profil.jsx'
+import Riset from './pages/Riset.jsx'
 // lakukan commit "selesai TODO 2" dan push 
 
 function App() {
