@@ -1,5 +1,5 @@
-import { NavLink } from 'react-router-dom';
-import bgGambar from '../../assets/header-bg.png';
+import { NavLink } from "react-router-dom";
+import bgGambar from "../../assets/header-bg.png";
 
 function Header() {
   return (
@@ -7,9 +7,9 @@ function Header() {
       className="header-area"
       style={{
         backgroundImage: `url(${bgGambar})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat',
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
       }}
     >
       <div className="header-text">
