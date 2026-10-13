@@ -12,7 +12,7 @@ import Profil from './pages/Profil';
 import Pendidikan from './pages/Pendidikan';
 import Riset from './pages/Riset';
 import Mahasiswa from './pages/Mahasiswa';
-import Lainlain from './pages/LainLain';
+import LainLain from './pages/LainLain';
 import NotFound from './pages/NotFound';
 // lakukan commit "selesai TODO 2" dan push 
 
@@ -30,7 +30,7 @@ function App() {
             <Route path="/riset" element={<Riset />} />
             <Route path="/mahasiswa" element={<Mahasiswa />} />
             <Route path="/berita" element={<Berita />} />
-            <Route path="/lainnya" element={<Lainlain />} />
+            <Route path="/lainnya" element={<LainLain />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </main>
