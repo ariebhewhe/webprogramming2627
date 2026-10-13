@@ -24,11 +24,11 @@ function App() {
       <header />
       <div className="main-wrapper">
         <main className="content-area">
-          {/* TODO 6 Routes 
+        
           <Routes>
             <Route path="/" element={<Beranda />} />
           </Routes>
-          */}
+          
         </main>
          {/* TODO 4 SideBar */}
          <SideBar />
