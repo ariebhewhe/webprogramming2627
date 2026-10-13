@@ -18,12 +18,12 @@ function Header() {
         <p>Universitas Matana.</p>
       </div>
       <nav className="nav-menu">
-        <NavLink to="./pages/Beranda">BERANDA</NavLink>
-        <NavLink to="./pages/Profil">PROFIL</NavLink>
-        <NavLink to="./pages/Pendidikan">PENDIDIKAN</NavLink>
-        <NavLink to="./pages/Riset">RISET</NavLink>
-        <NavLink to="./pages/Mahasiswa">MAHASISWA</NavLink>
-        <NavLink to="./pages/LainLain">LAIN-LAIN</NavLink>
+        <NavLink to="/">BERANDA</NavLink>
+        <NavLink to="/profil">PROFIL</NavLink>
+        <NavLink to="/pendidikan">PENDIDIKAN</NavLink>
+        <NavLink to="/riset">RISET</NavLink>
+        <NavLink to="/mahasiswa">MAHASISWA</NavLink>
+        <NavLink to="/lainlain">LAIN-LAIN</NavLink>
       </nav>
     </header>
   )
