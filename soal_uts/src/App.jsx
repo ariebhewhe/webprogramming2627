@@ -1,5 +1,3 @@
-import "./assets/style.css";
-import { Routes, Route } from "react-router-dom";
 import Header from "./components/layout/Header.jsx";
 import SideBar from "./components/layout/SideBar.jsx";
 import Footer from "./components/layout/Footer.jsx";
