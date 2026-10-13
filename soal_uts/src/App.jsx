@@ -1,5 +1,5 @@
-//import './assets/style.css';
-//import { Routes, Route } from 'react-router-dom';
+import './assets/style.css';
+import { Routes, Route } from 'react-router-dom';
 
 // TODO 1  Import Komponen Layout (Header, SideBar, Footer)
 
@@ -25,6 +25,7 @@ function App() {
     
     <div className="container">
       {/* TODO 3 Header */}
+      <Header />
       <div className="main-wrapper">
         <main className="content-area">
           {/* TODO 6 Routes 
@@ -32,11 +33,15 @@ function App() {
             <Route path="/" element={<Beranda />} />
           </Routes>
           */}
+          <Routes>
+            <Route path="/" element={<Beranda />} />
+          </Routes>
         </main>
          {/* TODO 4 SideBar */}
+         <SideBar />
       </div>
       {/* TODO 5 Footer */}
-      
+      <Footer />
     </div>
   );
 }
