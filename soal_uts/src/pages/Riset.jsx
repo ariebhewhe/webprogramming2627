@@ -18,4 +18,5 @@ export default function Riset() {
   )
 }
 
+// selesai TODO 16
 // lakukan commit "selesai TODO 6" dan push 
