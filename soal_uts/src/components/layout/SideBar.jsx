@@ -14,7 +14,7 @@ export default function SideBar() {
         2010 sees the redesign of our website. Take a look around and let us know
         what you think.
         <br />
-        <a href="/berita">Read more</a>
+        <a href="#">Read more</a>
       </div>
 
       <br />
