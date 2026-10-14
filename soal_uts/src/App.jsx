@@ -20,9 +20,7 @@ import NotFound from "./pages/NotFound";
 
 function App() {
   return (
-    
     <div className="container">
-      {/* TODO 3 Header */  }
       <Header />
       <div className="main-wrapper">
         <main className="content-area">
@@ -36,12 +34,9 @@ function App() {
             <Route path="/LainLain" element={<LainLain />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
-          
         </main>
-         {/* TODO 4 SideBar */}
         <SideBar />
       </div>
-      {/* TODO 5 Footer */}
       <Footer/>
     </div>
   );
