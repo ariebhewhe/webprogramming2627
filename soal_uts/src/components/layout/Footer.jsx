@@ -3,9 +3,9 @@
 export default function Footer() {
   return (
 // 2. Di dalam return, buat tag <footer className="footer-area">
-<footer className="footer-area">
 // 3. Isi tag footer tersebut dengan teks persis seperti di bawah ini:
 // Copyright © Prodi Informatika | HTML5 | CSS | ReactJS Fundamentals
+<footer className="footer-area">
 Copyright © Prodi Informatika | HTML5 | CSS | ReactJS Fundamentals
     </footer>
     );

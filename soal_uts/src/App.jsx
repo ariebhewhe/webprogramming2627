@@ -1,18 +1,19 @@
 //import './assets/style.css';
+import './assets/style.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom'; //NOTE: ADA KESALAHAN TADI 
 //import { Routes, Route } from 'react-router-dom';
-
+//coba push
 // TODO 1  Import Komponen Layout (Header, SideBar, Footer)
-import Header from './components/Header';
-import SideBar from './components/SideBar';
-import Footer from './components/Footer';
+import Header from './components/layout/Header.jsx';
+import SideBar from './components/layout/SideBar.jsx';
+import Footer from './components/layout/Footer.jsx';
 // lakukan commit "selesai TODO 1" dan push 
 
 // TODO 2  komponen Pages (Beranda, Profil, dll)
-import Beranda from './pages/Beranda';
-import Profil from './pages/Profil';
-import Berita from './pages/Berita';
-import NotFound from './pages/NotFound';
+import Beranda from './pages/Beranda.jsx';
+import Profil from './pages/Profil.jsx';
+//import Berita from './pages/Berita.jsx';
+//import NotFound from './pages/NotFound.jsx';
 // lakukan commit "selesai TODO 2" dan push 
 
 function App() {
@@ -31,8 +32,8 @@ function App() {
           <Routes>
             <Route path="/" element={<Beranda />} />
             <Route path="/profil" element={<Profil />} />
-            <Route path="/berita" element={<Berita />} />
-            <Route path="*" element={<NotFound />} />
+            {/* <Route path="/berita" element={<Berita />} /> */}
+            {/* <Route path="*" element={<NotFound />} /> */}
           </Routes>
         </main>
          {/* TODO 4 SideBar */}
