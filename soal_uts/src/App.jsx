@@ -16,6 +16,7 @@ import Pendidikan from "./pages/Pendidikan"
 import Riset from "./pages/Riset"
 import Berita from './pages/Berita'
 import NotFound from "./pages/NotFound";
+import Array from "./pages/Array";
 // lakukan commit "selesai TODO 2" dan push 
 
 function App() {
@@ -33,6 +34,7 @@ function App() {
             <Route path="/Mahasiswa" element={<Mahasiswa />} />
             <Route path="/LainLain" element={<LainLain />} />
             <Route path="*" element={<NotFound />} />
+            <Route path="/array" element={<Array />} />
           </Routes>
         </main>
         <SideBar />
