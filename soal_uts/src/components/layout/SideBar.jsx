@@ -9,7 +9,7 @@
 //    - Tambahkan <h3>Pencarian</h3>.
 //    - Buat elemen <input type="text" placeholder="Enter keywords..." />. Berikan inline style dengan nilai padding "5px" dan width "100%".
 // 3. Lakukan commit dan push dengan pesan: "Selesai TODO 11"
-function SideBar() {
+export default function SideBar() {
   return (
     <aside className="sidebar-area">
       <h3>Berita Terbaru</h3>
@@ -23,7 +23,7 @@ function SideBar() {
       <div className="news-item">
         2010 sees the redesign of our website. Take a look around and let us know what you think.
         <br />
-        <a href="/berita">Read more</a>
+        <a href="#">Read more</a>
       </div>
 
       <br />
@@ -37,5 +37,3 @@ function SideBar() {
     </aside>
   );
 }
-
-export default SideBar;
