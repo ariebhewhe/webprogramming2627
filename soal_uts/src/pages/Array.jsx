@@ -4,7 +4,9 @@ export default function Array() {
 
   return (
     <ul>
-      {daftarBuah.map((buah, index) => <li key={index}>{buah}</li>)}
+      {daftarBuah.map((buah) => (
+        <li>{buah}</li>
+      ))}
     </ul>
   );
 }
