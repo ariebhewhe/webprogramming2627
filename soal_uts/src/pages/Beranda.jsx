@@ -13,7 +13,7 @@ export default function Beranda() {
 
             <p>
                 <strong>Jurusan Informatika</strong> mempelajari berbagai bidang 
-                <strong>Ilmu Komputer</strong> yang bermanfaat untuk menghadapi{" "}
+                <strong>Ilmu Komputer</strong> yang bermanfaat untuk menghadapi 
                 <em>Era Digital Sekarang</em>.
             </p>
 
