@@ -9,4 +9,5 @@ export default function Berita() {
     </div>
   )
 }
-// Commit ulang TODO 17
+
+// selesai TOD0 17

@@ -6,4 +6,5 @@ export default function NotFound() {
     </div>
   )
 }
-// Commit ulang TODO 17
+
+// selesai TODO 17
