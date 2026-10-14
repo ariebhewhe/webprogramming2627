@@ -22,9 +22,11 @@ export default function Header() {
                 <NavLink to="/pendidikan">Pendidikan</NavLink>
                 <NavLink to="/riset">Riset</NavLink>
                 <NavLink to="/lainlain">Lain-Lainnya</NavLink>
+                <NavLink to="/array">Array</NavLink>
               </nav>
         </header>
     );
 }
+//Validasi TODO 18 Bagian array
 // 5. lakukan push dan commit "selesai TODO 9" dengan todo 9
 //commit ulang TODO 9
