@@ -1,8 +1,8 @@
-// TODO 13
+/// TODO 13
 // Buat component  function dengan nama Mahasiswa
-/*
+export default function Mahasiswa() {
  <div>
-      <h2 style={{ marginTop: 0 }}>Kegiatan Mahasiswa</h2>
+      <h2 style={{ marginTop: "20px" }}>Kegiatan Mahasiswa</h2>
       <p>
         Kehidupan kampus di Prodi Informatika sangat dinamis. Selain kegiatan akademik, 
         mahasiswa juga aktif dalam Himpunan Mahasiswa (HIMA), 
@@ -13,6 +13,6 @@
         Kami sangat mendukung pengembangan *soft skill* dan kepemimpinan melalui organisasi kemahasiswaan dan Unit Kegiatan Mahasiswa (UKM).
       </p>
     </div>
-*/
+}
 
-// lakukan commit  "selesai TODO 13" dan push 
+// lakukan commit  "selesai TODO 13" dan push
