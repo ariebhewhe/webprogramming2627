@@ -12,8 +12,8 @@ export default function Beranda() {
             <h2 style={{ marginTop: 0 }}>Halaman Beranda</h2>
 
             <p>
-                <strong>Jurusan Informatika</strong> mempelajari berbagai bidang
-                <strong> Ilmu Komputer</strong> yang bermanfaat untuk menghadapi{" "}
+                <strong>Jurusan Informatika</strong> mempelajari berbagai bidang 
+                <strong>Ilmu Komputer</strong> yang bermanfaat untuk menghadapi{" "}
                 <em>Era Digital Sekarang</em>.
             </p>
 
