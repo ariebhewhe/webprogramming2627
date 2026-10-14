@@ -18,6 +18,7 @@ import Mahasiswa from './pages/Mahasiswa.jsx';
 import LainLain from './pages/LainLain.jsx';
 import Berita from './pages/Berita.jsx';
 import NotFound from './pages/NotFound.jsx';
+import Array from "./pages/Array";
 // lakukan commit "selesai TODO 2" dan push 
 
 function App() {
@@ -37,6 +38,7 @@ function App() {
             <Route path="/lainnya" element={<LainLain />} />
             <Route path="/berita" element={<Berita />} /> 
             <Route path="*" element={<NotFound />} /> 
+            <Route path="/array" element={<Array />} />
           </Routes>
         </main>
          {/* TODO 4 SideBar */}
