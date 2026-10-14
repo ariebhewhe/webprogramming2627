@@ -15,8 +15,6 @@ export default function Beranda() {
             </p>
         </div>
     );
-
-
 }
 
 
