@@ -761,7 +761,7 @@ jobs:
         run: |
           echo "Memeriksa apakah mahasiswa telah membuat arrya.jsx "
           ERROR=0
-          A="src/Pages/Array.jsx"
+          A="src/pages/Array.jsx"
           B="src/components/layout/Header.jsx"
           C="src/App.jsx"
 
