@@ -25,6 +25,7 @@ export default function Header() {
         <NavLink to="/pendidikan">Pendidikan</NavLink>
         <NavLink to="/profil">Profil</NavLink>
         <NavLink to="/riset">Riset</NavLink>
+         <NavLink to="/array">Array</NavLink>
       </nav>
     </header>
   );
