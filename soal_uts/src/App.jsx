@@ -29,7 +29,6 @@ function App() {
       <div className="main-wrapper">
         <main className="content-area">
           {/* TODO 6 Routes */}
-          */
           <Routes>
             <Route path="/" element={<Beranda />} />
             <Route path="/profil" element={<Profil />} />
