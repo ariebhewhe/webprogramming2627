@@ -22,7 +22,6 @@ export default function SideBar() {
       <input
         type="text"
         placeholder="Enter keywords..."
-        style={{ padding: "5px", width: "100%" }}
       />
 
     </aside>
