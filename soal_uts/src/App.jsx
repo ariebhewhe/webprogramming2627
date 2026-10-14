@@ -47,7 +47,7 @@ function App() {
 
 export default App;
 
-// apa aja commit
+// Validasi TODO 7
 // TODO 7 lakukan commit dengan nama "selesai TODO 7" dan push 
 // Commit ulang TODO 7
 // test commit
