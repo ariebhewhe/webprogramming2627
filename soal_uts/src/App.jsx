@@ -21,20 +21,16 @@ import Berita from './pages/Berita.jsx';
 import NotFound from './pages/NotFound.jsx'
 
 // lakukan commit "selesai TODO 2" dan push 
+// TODO 3, 4, 5 terkait tag Header, SideBar, Footer sudah dihapus
+// TODO 6 terkait Routes sudah dihapus
 
 function App() {
   return (
     
     <div className="container">
-      {/* TODO 3 Header */}
       <Header />
       <div className="main-wrapper">
         <main className="content-area">
-          {/* TODO 6 Routes 
-          <Routes>
-            <Route path="/" element={<Beranda />} />
-          </Routes>
-          */}
           <Routes>
             <Route path="/" element={<Beranda />} />
             <Route path="/profil" element={<Profil />} />
@@ -46,10 +42,8 @@ function App() {
             <Route path="/notfound" element={<NotFound />} />
           </Routes>
         </main>
-         {/* TODO 4 SideBar */}
          <SideBar />
       </div>
-      {/* TODO 5 Footer */}
       <Footer />
     </div>
   );
