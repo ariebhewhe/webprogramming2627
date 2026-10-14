@@ -1,5 +1,5 @@
 // TODO 9
-// 1. Import { NavLink } dari 'react-router-dom'
+// komentar import navlink dihapus
 import {NavLink} from 'react-router-dom'
 // 2. Import gambar dari folder assets: header-bg.png beri nama bgGambar
 import bgGambar from '../../assets/header-bg.png'
