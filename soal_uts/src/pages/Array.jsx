@@ -6,3 +6,4 @@ export default function Array (){
         </ul>
     );
 }
+//izin commit & push
