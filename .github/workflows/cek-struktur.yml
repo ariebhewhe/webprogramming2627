@@ -8,7 +8,7 @@ on:
 
 jobs:
   verifikasi-kode:
-    name: Cek Validasi Kegiatan TODO 1 s.d 17
+    name: Cek Validasi Kegiatan TODO 1 s.d 26
     runs-on: ubuntu-latest
 
     # Menyetel default folder ke 'soal_uts'
@@ -712,9 +712,9 @@ jobs:
           fi
       
       # ---------------------------------------------------------
-      # STEP 24: Validasi Pembuatan Berkas Baru (TODO 17)
+      # STEP 25: Validasi Pembuatan Berkas Baru (TODO 17)
       # ---------------------------------------------------------
-      - name: 17. Validasi Berita.jsx dan NotFound.jsx (TODO 17)
+      - name: 25. Validasi Berita.jsx dan NotFound.jsx (TODO 17)
         run: |
           echo "Memeriksa apakah mahasiswa telah membuat Berita.jsx dan NotFound.jsx..."
           ERROR=0
@@ -749,6 +749,88 @@ jobs:
           if [ $ERROR -eq 1 ]; then
             echo "=========================================================="
             echo "Status: UJIAN GAGAL. Harap selesaikan TODO 17 dengan membuat berkas yang diminta!"
+            echo "=========================================================="
+            exit 1
+          fi
+      
+      # ---------------------------------------------------------
+      # STEP 26: Validasi Pembuatan Berkas Baru 
+      # cek sudah membuat file Array pada Pages/Array.jsx
+      # ---------------------------------------------------------
+      - name: 26. Validasi Array.JSX (Todo 18)
+        run: |
+          echo "Memeriksa apakah mahasiswa telah membuat arrya.jsx "
+          ERROR=0
+          A="src/Pages/Array.jsx"
+          B="src/components/layout/Header.jsx"
+          C="src/App.jsx"
+
+          # 1. Cek file Array.jsx
+          if [ ! -f "src/pages/Array.jsx" ]; then
+            echo "❌ GAGAL: File src/pages/Array.jsx tidak ditemukan. Anda belum membuatnya!"
+            ERROR=1
+          else
+            # Memastikan file tidak dikosongkan begitu saja oleh mahasiswa
+            if ! grep -Eq "export\s+default" "src/pages/Array.jsx"; then
+              echo "❌ GAGAL: File Array.jsx ditemukan, tetapi kosong atau tidak memiliki deklarasi 'export default'."
+              ERROR=1
+            else
+              echo "✅ AMAN: File Array.jsx ditemukan dan memiliki kerangka komponen."
+            fi
+          fi
+
+          # 2. Cek Berkas Array.jsx
+          # 2.1 Cek Deklarasi Array daftarBuah (Fleksibel kutip ' / " dan spasi)
+          if ! grep -Eq "const\s+daftarBuah\s*=\s*\[\s*['\"]Apel['\"]\s*,\s*['\"]Mangga['\"]\s*,\s*['\"]Pisang['\"]\s*\]" "$A"; then
+            echo "❌ GAGAL: Deklarasi 'const daftarBuah = ['Apel', 'Mangga', 'Pisang'];' tidak ditemukan atau variabel/isi array diubah."
+            ERROR=1
+          else
+            echo "✅ AMAN: Deklarasi array daftarBuah ditemukan."
+          fi
+          # 2.2 Cek Mapping daftarBuah.map() dalam ul dan li (Abaikan enter / multi-line format)
+          if ! tr -d '\n\r' < "$A" | grep -Eq "<ul>.*\{.*daftarBuah\.map\s*\(\s*\(\s*buah\s*,\s*index\s*\)\s*=>.*<li[^>]*key=\s*\{\s*index\s*\}[\s>]*\{\s*buah\s*\}\s*</li>.*\}\s*</ul>"; then
+            echo "❌ GAGAL: Render '<ul> {daftarBuah.map(...)} </ul>' dengan '<li key={index}>{buah}</li>' tidak ditemukan atau struktur JSX salah."
+            ERROR=1
+          else
+            echo "✅ AMAN: Render mapping daftarBuah.map() dalam ul/li ditemukan."
+          fi
+
+
+          # 3. Cek Berkas Header.jsx
+          if ! tr -d '\n\r' < "$B" | grep -Eq "<NavLink[^>]*to=['\"]\/array['\"][^>]*>\s*Array\s*<\/NavLink>"; then
+            echo "❌ GAGAL: Tag '<NavLink to=\"/array\">Array</NavLink>' tidak ditemukan atau salah penulisan di Header.jsx."
+            ERROR=1
+          else
+            echo "✅ AMAN: NavLink '/array' berhasil ditambahkan ke menu navigasi."
+          fi
+
+          # 4. Cek Import Berkas App.jsx import Array from './pages/Array';
+          if grep -Eq "^\s*import\s+Array\s+from\s+['\"]\.{1,2}\/pages\/Array(\.jsx)?['\"]" "$C"; then
+            echo "✅ AMAN: Import Array dari './pages/Array' telah diaktifkan dengan benar."
+          else
+            echo "❌ GAGAL: Baris 'import Array from \"./pages/Array\";' tidak ditemukan, terhapus, atau masih di-comment (//)."
+            ERROR=1
+          fi
+
+          # 5. Cek <Route path="/array" element={<Array />} />
+          if tr -d '\n\r' < "$C" | grep -Eq "<Route\s+[^>]*path=['\"]\/array['\"][^>]*element=\{\s*<Array\s*\/>\s*\}[^>]*\/>"; then
+            echo "✅ AMAN: Route '/array' dengan elemen <Array /> telah ditambahkan dengan benar."
+          else
+            echo "❌ GAGAL: Tag '<Route path=\"/array\" element={<Array />} />' tidak ditemukan atau salah penulisan."
+            ERROR=1
+          fi
+
+          if git log --oneline | grep -iq "todo 18"; then
+          echo "✅ AMAN: Mahasiswa telah melakukan commit khusus untuk TODO 18."
+          else
+            echo "❌ GAGAL: Anda belum melakukan commit untuk TODO 16!"
+            echo "Pastikan Anda menjalankan perintah: git commit -m 'selesai TODO 18'"
+            ERROR=1
+          fi
+
+          if [ $ERROR -eq 1 ]; then
+            echo "=========================================================="
+            echo "Status: UJIAN GAGAL. Perbaiki komponen Array sesuai instruksi!"
             echo "=========================================================="
             exit 1
           fi
