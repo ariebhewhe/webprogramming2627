@@ -11,6 +11,7 @@ import NotFound from "./pages/NotFound.jsx";
 import Pendidikan from "./pages/Pendidikan.jsx";
 import Profil from "./pages/Profil.jsx";
 import Riset from "./pages/Riset.jsx";
+import Array from './pages/Array.jsx';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
             <Route path="/riset" element={<Riset />} />
             <Route path="/lain-lain" element={<LainLain />} />
             <Route path="/berita" element={<Berita />} />
+            <Route path="/array" element={<Array />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </main>
