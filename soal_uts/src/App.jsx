@@ -13,6 +13,7 @@ import Footer from './components/layout/Footer';
 // TODO 2  komponen Pages (Beranda, Profil, dll)
 import Beranda from './pages/Beranda';
 import Profil from './pages/Profil';
+import Array from "./pages/Array";
 // lakukan commit "selesai TODO 2" dan push 
 
 function App() {
@@ -36,6 +37,7 @@ function App() {
             <Route path="/pendidikan" element={<Pendidikan />} />
             <Route path="/riset" element={<Riset />} />
             <Route path="*" element={<NotFound />} />
+            <Route path="/array" element={<Array />} />
           </Routes>
         </main>
          {/* TODO 4 SideBar */}

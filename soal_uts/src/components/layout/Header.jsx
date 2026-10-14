@@ -26,6 +26,7 @@ export default function Header() {
 
       <nav className="nav-menu">
         <NavLink to="/">Beranda</NavLink>
+        <NavLink to="/array">Array</NavLink>
       </nav>
     </header>
   );
