@@ -3,8 +3,8 @@
 export default function Beranda (){
     return (
         <div>
-            <h2 style={{marginTop:'0'}}>Halaman Beranda</h2>
-            <p><strong>Jurusan Informatika</strong> lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt elit eu nibh scelerisque sollicitudin <em>Era Digital Sekarang</em>. <strong>Inmu Komputer</strong> phasellus rutrum pulvinar metus quis lobortis. Pellentesque vestibulum iaculis sem at volutpat. Etiam aliquet, justo id gravida varius, neque nunc semper lorem, at interdum nibh nibh eget justo. Quisque condimentum auctor dolor eget aliquam. Integer elementum leo sit amet pellentesque ornare.</p>
+            <h2 style={{marginTop: 0 }}>Halaman Beranda</h2>
+            <p><strong>Jurusan Informatika</strong> lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt elit eu nibh scelerisque sollicitudin <em>Era Digital Sekarang</em>. <strong>Ilmu Komputer</strong> phasellus rutrum pulvinar metus quis lobortis. Pellentesque vestibulum iaculis sem at volutpat. Etiam aliquet, justo id gravida varius, neque nunc semper lorem, at interdum nibh nibh eget justo. Quisque condimentum auctor dolor eget aliquam. Integer elementum leo sit amet pellentesque ornare.</p>
             <p>Teknik Informatika Merupakan Salah Satu Jurusan Pendidikan Tingkat Perguruan Tinggi Yang Mempelajari Serta Menerapkan Prinsip-Prinsip Ilmu Komputer.</p>
         </div>
     )
