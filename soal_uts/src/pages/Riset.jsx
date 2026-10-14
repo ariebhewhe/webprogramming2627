@@ -1,7 +1,6 @@
 // TODO 16
 // Buat component  function dengan nama Riset
-
-function Riset() {
+export default function Riset() {
   return (
     <div>
       <h2 style={{ marginTop: 0 }}>Fokus Riset</h2>
@@ -18,6 +17,6 @@ function Riset() {
   );
 }
 
-export default Riset;
+
 
 // lakukan commit "selesai TODO 6" dan push 

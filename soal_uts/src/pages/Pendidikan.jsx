@@ -1,6 +1,6 @@
 // TODO 14
 //  Buat component  function dengan nama Pendidikan
-function Pendidikan() {
+export default function Pendidikan() {
   return (
     <div>
 
@@ -18,7 +18,7 @@ function Pendidikan() {
   );
 }
 
-export default Pendidikan;
+
 
 // lakukan commit "selesai TODO 14" dan push 
 

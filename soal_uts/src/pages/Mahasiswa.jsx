@@ -1,7 +1,7 @@
 // TODO 13
 // Buat component  function dengan nama Mahasiswa
 
-function Mahasiswa() {
+export default function Mahasiswa() {
   return (
     <div>
       <h2 style={{ marginTop: 0 }}>Kegiatan Mahasiswa</h2>
@@ -18,6 +18,6 @@ function Mahasiswa() {
   );
 }
 
-export default Mahasiswa;
+
 
 // lakukan commit  "selesai TODO 13" dan push 

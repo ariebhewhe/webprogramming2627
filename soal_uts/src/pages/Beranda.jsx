@@ -1,7 +1,7 @@
 // TODO 12
 // 1. Buat component function dengan nama Beranda
 // 2. Struktur wajib di dalam return (bungkus dengan tag <div>):
-function Beranda() {
+export default function Beranda() {
     return (
         <div>
             <h2 style={{ marginTop: 0 }}>Halaman Beranda</h2>
@@ -18,7 +18,7 @@ function Beranda() {
 
 
 }
-export default Beranda;
+
 
 //    - Buat tag <h2> berisi teks "Halaman Beranda". Berikan inline style marginTop dengan nilai 0.
 //    - Buat paragraf pertama (<p>). Cetak tebal (strong) pada kata "Jurusan Informatika" dan "Ilmu Komputer". Cetak miring (em) pada kata "Era Digital Sekarang".
