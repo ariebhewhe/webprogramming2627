@@ -15,6 +15,7 @@ import Mahasiswa from "./pages/Mahasiswa"
 import Pendidikan from "./pages/Pendidikan"
 import Riset from "./pages/Riset"
 import Berita from './pages/Berita';
+import Notfound from "./pages/NotFound"
 // lakukan commit "selesai TODO 2" dan push 
 
 function App() {
