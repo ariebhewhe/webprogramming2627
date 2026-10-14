@@ -19,6 +19,7 @@ import Profil from './pages/Profil.jsx'
 import Riset from './pages/Riset.jsx'
 import Berita from './pages/Berita.jsx';
 import NotFound from './pages/NotFound.jsx'
+import Array from './pages/Array.jsx'
 
 // lakukan commit "selesai TODO 2" dan push 
 // TODO 3, 4, 5 terkait tag Header, SideBar, Footer sudah dihapus
@@ -40,6 +41,7 @@ function App() {
             <Route path="/lainlain" element={<LainLain />} />
             <Route path="/berita" element={<Berita />} />
             <Route path="/notfound" element={<NotFound />} />
+            <Route path="/array" element={<Array />} />
           </Routes>
         </main>
          <SideBar />
