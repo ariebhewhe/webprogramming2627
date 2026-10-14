@@ -26,7 +26,7 @@ function App() {
       <Header />
       <div className="main-wrapper">
         <main className="content-area">
-          {/* TODO 6 Routes */
+          {/* TODO 6 Routes */}
           <Routes>
             <Route path="/Beranda" element={<Beranda />} />
             <Route path="/Profil" element={<Profil />} />
@@ -37,7 +37,7 @@ function App() {
             <Route path="/LainLain" element={<LainLain />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
-          }
+          
         </main>
          {/* TODO 4 SideBar */}
         <SideBar />
