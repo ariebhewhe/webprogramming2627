@@ -3,7 +3,7 @@ export default function Array (){
     return (
         <ul>
             {daftarBuah.map((buah) => (
-                <li>{buah}</li>
+                <li key={index}>{buah}</li>
             ))}
         </ul>
     )
