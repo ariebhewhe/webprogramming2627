@@ -2,7 +2,7 @@
 import { NavLink } from 'react-router-dom'
 import bgGambar from '../../assets/header-bg.png'
 
-function Header() {
+export default function Header() {
   return (
     <header
       className="header-area"
@@ -28,5 +28,3 @@ function Header() {
     </header>
   )
 }
-
-export default Header
