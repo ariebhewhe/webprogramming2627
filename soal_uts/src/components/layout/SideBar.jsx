@@ -23,5 +23,7 @@ export default function SideBar() {
         <input type="text" placeholder="Enter keywords..." style={{ padding: "5px", width: "100%" }} />
         </aside>
   );
+}
+
 
 // 3. Lakukan commit dan push dengan pesan: "Selesai TODO 11"
