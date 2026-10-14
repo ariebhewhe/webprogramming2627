@@ -28,16 +28,17 @@ function App() {
       <Header />
       <div className="main-wrapper">
         <main className="content-area">
-          {/* TODO 6 Routes 
-          <Routes>
-            <Route path="/" element={<Beranda />} />
-          </Routes>
-          */}
+          {/* TODO 6 Routes */}
+          */
           <Routes>
             <Route path="/" element={<Beranda />} />
             <Route path="/profil" element={<Profil />} />
-            {/* <Route path="/berita" element={<Berita />} /> */}
-            {/* <Route path="*" element={<NotFound />} /> */}
+            <Route path="/pendidikan" element={<Pendidikan />} />
+            <Route path="/riset" element={<Riset />} />
+            <Route path="/mahasiswa" element={<Mahasiswa />} />
+            <Route path="/lainnya" element={<LainLain />} />
+            <Route path="/berita" element={<Berita />} /> 
+            <Route path="*" element={<NotFound />} /> 
           </Routes>
         </main>
          {/* TODO 4 SideBar */}
