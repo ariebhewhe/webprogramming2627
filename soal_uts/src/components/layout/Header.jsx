@@ -14,16 +14,16 @@ export default function Header() {
       }}
     >
       <div className="header-text">
-        <h1>Prodi Informatika</h1>
+        <h1>ProdiInformatika</h1>
         <p>Universitas Matana.</p>
       </div>
       <nav className="nav-menu">
-        <NavLink to="/">BERANDA</NavLink>
-        <NavLink to="/profil">PROFIL</NavLink>
-        <NavLink to="/pendidikan">PENDIDIKAN</NavLink>
-        <NavLink to="/riset">RISET</NavLink>
-        <NavLink to="/mahasiswa">MAHASISWA</NavLink>
-        <NavLink to="/lainlain">LAIN-LAIN</NavLink>
+        <NavLink to="/">Beranda</NavLink>
+        <NavLink to="/profil">Profil</NavLink>
+        <NavLink to="/pendidikan">Pendidikan</NavLink>
+        <NavLink to="/riset">Riset</NavLink>
+        <NavLink to="/mahasiswa">Mahasiswa</NavLink>
+        <NavLink to="/lainlain">Lain-lain</NavLink>
       </nav>
     </header>
   )
