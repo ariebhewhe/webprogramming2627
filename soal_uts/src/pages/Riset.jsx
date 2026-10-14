@@ -1,8 +1,9 @@
 // TODO 16
-// Buat component  function dengan nama Riset
-/*
- <div>
-      <h2 style={{ marginTop: 0 }}>Fokus Riset</h2>
+// Buat component function dengan nama Riset
+export default function Riset() {
+  return (
+    <div>
+      <h2 style={{ marginTop: "20px" }}>Fokus Riset</h2>
       <p>
         Dosen dan mahasiswa kami aktif melakukan berbagai penelitian inovatif di bidang teknologi informasi guna memberikan solusi nyata bagi permasalahan di masyarakat dan industri.
       </p>
@@ -13,6 +14,7 @@
         <br />- <strong>Cyber Security</strong>
       </p>
     </div>
-*/
+  );
+}
 
-// lakukan commit "selesai TODO 6" dan push 
+// lakukan commit "selesai TODO 16" dan push 
