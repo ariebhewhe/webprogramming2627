@@ -3,7 +3,7 @@
 export default function Beranda() {
   return (
     <div>
-      <h2 style={{ marginTop: "20px" }}>Halaman Beranda</h2>
+      <h2 style={{ marginTop: 0 }}>Halaman Beranda</h2>
         <p>
         <strong>Jurusan Informatika</strong> dan <strong>Ilmu Komputer</strong> di <em>Era Digital Sekarang</em>.
         </p>
