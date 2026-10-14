@@ -1,5 +1,3 @@
-import { Link } from 'react-router-dom';
-
 // TODO 11
 export default function SideBar() {
   return (
@@ -16,7 +14,7 @@ export default function SideBar() {
         2010 sees the redesign of our website. Take a look around and let us know
         what you think.
         <br />
-        <Link to="/berita">Read more</Link>
+        <a href="/berita">Read more</a>
       </div>
 
       <br />
