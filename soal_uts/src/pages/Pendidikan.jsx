@@ -18,3 +18,4 @@ export default function Pendidikan() {
   )
 }
 // lakukan commit "selesai TODO 14" dan push 
+// Commit ulang TODO 14
