@@ -1,4 +1,5 @@
-function NotFound (){
+// TODO 17
+export default function NotFound (){
     return (
         <div>
             <h2 style={{marginTop:'0'}}>Page Not Found!</h2>
@@ -6,4 +7,3 @@ function NotFound (){
         </div>
     )
 }
-export default NotFound;

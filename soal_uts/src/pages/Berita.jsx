@@ -1,4 +1,5 @@
-function Berita (){
+// TODO 17
+export default function Berita (){
     return (
         <div>
             <h2 style={{marginTop:'0'}}>New Website Launched</h2>
@@ -6,4 +7,3 @@ function Berita (){
         </div>
     )
 }
-export default Berita
