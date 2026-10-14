@@ -7,3 +7,5 @@ export default function Footer() {
         </footer>
     );
 }
+
+//commit ulang todo 10 footer

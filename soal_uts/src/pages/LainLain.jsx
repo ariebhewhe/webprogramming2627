@@ -16,3 +16,4 @@ export default function LainLain() {
 }
 
 // 3. lakukan commit dan push 
+// commit ulang todo 10Lainlain
