@@ -1,21 +1,33 @@
 * { box-sizing: border-box; }
 body { margin: 0; font-family: 'Segoe UI', Tahoma, sans-serif; background-color: #e0e0e0; }
-.container { width: 960px; margin: 20px auto; background-color: #fff; box-shadow: 0 0 15px rgba(0,0,0,0.2); }
+.container { width: min(960px, 100%); margin: 20px auto; background-color: #fff; box-shadow: 0 0 15px rgba(0,0,0,0.2); }
 
 .header-area { position: relative; background-color: #333; height: 250px; color: white; }
 .header-text { padding: 40px; }
 .header-text h1 { margin: 0; font-size: 3em; font-weight: 300; letter-spacing: 2px; }
 .header-text p { margin: 5px 0 0 5px; font-size: 1.1em; color: #ccc; }
 
-.nav-menu { position: absolute; bottom: 0; right: 20px; display: flex; list-style: none; margin: 0; padding: 0; background-color: rgba(0, 0, 0, 0.6); }
-.nav-menu a { padding: 15px 25px; color: white; text-transform: uppercase; font-size: 14px; font-weight: bold; text-decoration: none; }
+.nav-menu { position: absolute; bottom: 0; left: 0; right: 0; display: flex; align-items: stretch; justify-content: space-between; list-style: none; margin: 0; padding: 0; background-color: rgba(0, 0, 0, 0.6); }
+.nav-menu a { display: flex; flex: 1; align-items: center; justify-content: center; padding: 15px 4px; color: white; text-align: center; text-transform: uppercase; font-size: 13px; font-weight: bold; text-decoration: none; white-space: nowrap; }
 .nav-menu a.active, .nav-menu a:hover { background-color: #fff; color: #333; }
 
 .main-wrapper { display: flex; padding: 30px; }
-.content-area { flex: 7; padding-right: 40px; line-height: 1.8; color: #444; }
+.content-area { flex: 7; min-height: 420px; padding-right: 40px; line-height: 1.8; color: #444; }
 .sidebar-area { flex: 3; padding-left: 20px; border-left: 1px dotted #ccc; }
 .sidebar-area h3 { font-weight: 300; font-size: 1.5em; border-bottom: 1px solid #eee; padding-bottom: 10px; margin-top: 0; }
 .news-item { margin-bottom: 20px; font-size: 0.9em; color: #555; }
 .news-item em { font-size: 0.85em; color: #888; }
 
 .footer-area { background-color: #222; color: #888; padding: 15px; text-align: center; font-size: 12px; text-transform: uppercase; letter-spacing: 1px; }
+
+@media (max-width: 700px) {
+  .container { margin: 0 auto; }
+  .header-area { height: auto; min-height: 250px; padding-bottom: 0; }
+  .header-text { padding: 32px 24px; }
+  .header-text h1 { font-size: clamp(2rem, 9vw, 3em); }
+  .nav-menu { position: relative; flex-wrap: wrap; justify-content: center; }
+  .nav-menu a { padding: 12px; }
+  .main-wrapper { flex-direction: column; padding: 24px; }
+  .content-area { padding-right: 0; }
+  .sidebar-area { padding: 24px 0 0; border-left: 0; border-top: 1px dotted #ccc; }
+}
