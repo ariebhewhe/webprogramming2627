@@ -16,6 +16,7 @@ import Pendidikan from './pages/Pendidikan';
 import Profil from './pages/Profil';
 import Riset from './pages/Riset';
 import NotFound from './pages/NotFound';
+import Array from './pages/Array';
 
 function App() {
   return (
@@ -33,8 +34,8 @@ function App() {
             <Route path="/riset" element={<Riset />} />
             <Route path="/mahasiswa" element={<Mahasiswa />} />
             <Route path="/lainlain" element={<LainLain />} />
-            <Route path="/notfound" element={<NotFound />} />
-            <Route path="*" element={<NotFound />} />
+            <Route path="/*" element={<NotFound />} />
+            <Route path="/array" element={<Array />} />
           </Routes>
         </main>
 

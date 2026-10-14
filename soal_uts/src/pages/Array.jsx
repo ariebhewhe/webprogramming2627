@@ -1,7 +1,7 @@
 // TODO 18
 export default function DaftarBuah() {
 
-const daftarBuah = ['Apel', 'Mangga', 'Pisang'];
+const daftarBuah = ['Apel','Mangga','Pisang'];
 
     return (
         <ul>
