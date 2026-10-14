@@ -49,5 +49,5 @@ function App() {
 }
 
 export default App;
-
+//git commit selesai TODO 7
 // TODO 7 lakukan commit dengan nama "selesai TODO 7" dan push 
