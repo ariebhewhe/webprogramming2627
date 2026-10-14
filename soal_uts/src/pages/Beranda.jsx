@@ -15,3 +15,4 @@ export default function Beranda() {
   );
 }
 // 3. Lakukan commit dan push dengan pesan "Selesai TODO 12"
+// commit ulang todo 12
