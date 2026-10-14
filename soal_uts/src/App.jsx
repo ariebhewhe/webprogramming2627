@@ -9,6 +9,8 @@ import Mahasiswa from './pages/Mahasiswa.jsx';
 import LainLain from './pages/LainLain.jsx';
 import Pendidikan from './pages/Pendidikan.jsx';
 import Riset from './pages/Riset.jsx';
+import Berita from '.pages/Berita.jsx';
+import NotFound from './pages/NotFound.jsx'; 
 // TODO 1  Import Komponen Layout (Header, SideBar, Footer)
 // lakukan commit "selesai TODO 1" dan push 
 
@@ -29,6 +31,8 @@ function App() {
             <Route path="/lain-lain" element={<LainLain />} />
             <Route path="/pendidikan" element={<Pendidikan />} />
             <Route path="/riset" element={<Riset />} />
+            <Route path="/berita" element={<Berita />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
 
 
