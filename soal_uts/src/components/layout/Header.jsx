@@ -35,6 +35,7 @@ export default function Header () {
                 <NavLink to="/Riset">Riset</NavLink>
                 <NavLink to="/Mahasiswa">Mahasiswa</NavLink>
                 <NavLink to="/LainLain">LainLain</NavLink>
+                <NavLink to="*">NotFound</NavLink>
             </nav>
         </header>
     );
