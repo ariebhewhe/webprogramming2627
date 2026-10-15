@@ -1,6 +1,8 @@
 // TODO 16
 // Buat component  function dengan nama Riset
-/*
+export default function Riset(){
+return(
+
  <div>
       <h2 style={{ marginTop: 0 }}>Fokus Riset</h2>
       <p>
@@ -13,6 +15,7 @@
         <br />- <strong>Cyber Security</strong>
       </p>
     </div>
-*/
+  );
+}
 
 // lakukan commit "selesai TODO 6" dan push 

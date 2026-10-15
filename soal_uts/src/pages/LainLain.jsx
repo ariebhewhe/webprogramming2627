@@ -1,7 +1,7 @@
 // TODO 10
 // 1. Buat component  function dengan nama LainLain
-/*
- 2. isi adalah sebagai berikut 
+export default function LainLain(){
+return(
 <div>
       <h2 style={{ marginTop: 0 }}>Informasi Lain-Lain</h2>
       <p>
@@ -11,6 +11,7 @@
         Untuk informasi lebih lanjut, silakan hubungi bagian tata usaha program studi.
       </p>
     </div>
-*/
+  );
+}
 
 // 3. lakukan commit dan push 
