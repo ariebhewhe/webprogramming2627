@@ -16,7 +16,7 @@
 */
 
 // lakukan commit "selesai TODO 14" dan push 
-export default function Pendidikan() {
+function Pendidikan() {
   return (
     <div>
       <h2 style={{ marginTop: 0 }}>Kurikulum & Pendidikan</h2>
@@ -32,3 +32,5 @@ export default function Pendidikan() {
     </div>
   );
 }
+
+export default Pendidikan;
