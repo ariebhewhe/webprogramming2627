@@ -4,5 +4,5 @@ export default function NotFound() {
     <div>
       <h2 style={{ marginTop: 0 }}>Halaman Tidak Ditemukan</h2>
     </div>
-  )
+  );
 }
