@@ -1,4 +1,4 @@
-export default function Berita() {
+function Berita() {
   return (
     <div>
       <h2 style={{ marginTop: 0 }}>Berita</h2>
@@ -6,3 +6,5 @@ export default function Berita() {
     </div>
   );
 }
+
+export default Berita;
