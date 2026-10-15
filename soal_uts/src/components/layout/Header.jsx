@@ -30,3 +30,4 @@ export default function Header() {
 //Validasi TODO 18 Bagian array
 // 5. lakukan push dan commit "selesai TODO 9" dengan todo 9
 //commit ulang TODO 9
+// test aja buat video
