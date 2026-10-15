@@ -8,4 +8,5 @@ export default function Array () {
     );
 }
 
-//tambahan TODO 18
+//Validasi TODO 18 
+// oke
