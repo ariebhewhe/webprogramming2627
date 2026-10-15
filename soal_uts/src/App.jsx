@@ -1,5 +1,3 @@
-//import './assets/style.css';
-//import { Routes, Route } from 'react-router-dom';
 import './assets/style.css';
 import { Routes, Route } from 'react-router-dom';
 
@@ -12,7 +10,13 @@ import Footer from './components/layout/Footer';
 
 // TODO 2  komponen Pages (Beranda, Profil, dll)
 import Beranda from './pages/Beranda';
+import Berita from './pages/Berita';
+import LainLain from './pages/LainLain';
+import Mahasiswa from './pages/Mahasiswa';
+import Pendidikan from './pages/Pendidikan';
 import Profil from './pages/Profil';
+import Riset from './pages/Riset';
+import NotFound from './pages/NotFound';
 import Array from "./pages/Array";
 // lakukan commit "selesai TODO 2" dan push 
 
@@ -37,7 +41,8 @@ function App() {
             <Route path="/pendidikan" element={<Pendidikan />} />
             <Route path="/riset" element={<Riset />} />
             <Route path="*" element={<NotFound />} />
-            <Route path="/array" element={<Array />} />
+            <Route path="/array" element={<Array />} /> 
+            <Route path="/mahasiswa" element={<Mahasiswa />} />
           </Routes>
         </main>
          {/* TODO 4 SideBar */}
