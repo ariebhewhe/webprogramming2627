@@ -7,3 +7,5 @@ export default function Array () {
         </ul>
     );
 }
+
+//tambahan TODO 18
