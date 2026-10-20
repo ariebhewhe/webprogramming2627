@@ -1,26 +1,24 @@
 import './App.css'
-
+import { Route, Routes } from 'react-router-dom'
 
 import TransaksiItem from './component/TransaksiItem'
 import KartuRingkasan from './component/KartuRingkasan'
+
 import WalletSummary from './component/WalletSummary'
 import Badge from './component/Badge'
 
 function App() {
   return (
     <>
-      {/* buat Routes */}
+      <AppNavigation />
+      <Routes>
+        <Route path='/transaksi' element={<TransaksiItem />} />  
+        <Route path='/kartu' element={ <KartuRingkasan />} />
+        <Route path='/badge' element={ <Badge />} />
+        <Route path='/wallet' element={ <WalletSummary />} />
+      </Routes>
   
-          {/* Tempat untuk komponen  */}
-          {/* Route transaksiItem */}
-          <TransaksiItem />
-          {/* Route KartuRingaksan */}
-          <KartuRingkasan />
-          {/* Route Badge */}
-          <Badge tipe="Pemasukan">+ Rp 50.000</Badge>
-          {/* Route WalletSummary */}
-          <WalletSummary />
-    
+         
           
     
      
