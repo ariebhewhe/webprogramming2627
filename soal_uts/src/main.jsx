@@ -10,4 +10,4 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     </BrowserRouter>
   </React.StrictMode>,
 )
-//committ ulang TODO 8
+//committ ulangg TODO 8
