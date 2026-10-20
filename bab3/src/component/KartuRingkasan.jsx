@@ -1,8 +1,8 @@
 export default function KartuRingkasan(){
     const cardStyle = {
         padding: '20px',
-        border: '1 px solid #dee2e6',
-        boderRadius: '6px',
+        border: '1px solid #dee2e6',
+        borderRadius: '6px',
         marginBottom: '15px'
     };
     const textStyle = {
