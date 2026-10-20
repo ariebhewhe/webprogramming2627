@@ -12,7 +12,7 @@ function App() {
     <>
       <AppNavigation />
       <Routes>
-        <Route path='/transaksi' element={<TransaksiItem />} />  
+        <Route path='/transaksi' element={ <TransaksiItem />} />
         <Route path='/kartu' element={ <KartuRingkasan />} />
         <Route path='/badge' element={ <Badge />} />
         <Route path='/wallet' element={ <WalletSummary />} />
