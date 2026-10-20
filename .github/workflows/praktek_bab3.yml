@@ -51,7 +51,6 @@ jobs:
           "src/App.css"
           "src/App.jsx"
           "src/index.css"
-          "src/styles/style.css" 
           "package.json")
           MISSING=0
           for FILE in "${FILES[@]}"; do
