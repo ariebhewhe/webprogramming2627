@@ -1,15 +1,26 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import { BrowserRouter } from 'react-router-dom';
-import App from './App.jsx';
+import './App.css'
+import { Route, Routes } from 'react-router-dom'
+import TransaksiItem from './component/TransaksiItem'
+import KartuRingkasan from './component/KartuRingkasan'
+import Badge from './component/Badge'
+import WalletSummary from './component/WalletSummary'
 
-// Impor CSS Bootstrap
-import 'bootstrap/dist/css/bootstrap.min.css';
+// import transaksi Item
+// import kartu Ringkasan
+// import badge
+// WalletSummary
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
-  </React.StrictMode>
-);
+function App() {
+  return (
+    <>
+      <Routes>
+        <Route path='/transaksi' element={ <TransaksiItem />} />
+        <Route path='/kartu' element={ <KartuRingkasan />} />
+        <Route path='/badge' element={ <Badge />} />
+        <Route path='/wallet' element={ <WalletSummary />} />
+      </Routes>
+    </>
+  );
+}
+
+export default App;
