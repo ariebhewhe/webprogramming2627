@@ -1,9 +1,13 @@
 import './App.css'
 
 // import transaksi Item 
+import './component/TransaksiItem.jsx'
 // import kartu Ringkasan
+import './component/KartuRingkasan.jsx'
 // import badge
+import './component/Badge.jsx'
 // WalletSummary
+import './component/WalletSummary.jsx'
 
 
 function App() {
@@ -20,7 +24,6 @@ function App() {
     
      
 
-      
     </>
   )
 }
