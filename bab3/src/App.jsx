@@ -1,30 +1,25 @@
-import './App.css'
 
-// import transaksi Item 
+import './App.css';
 import TransaksiItem from './component/TransaksiItem';
-// import kartu Ringkasan
-// import badge
-// WalletSummary
-
+// import KartuRingkasan from './component/KartuRingkasan';
+// import Badge from './component/Badge';
+// import WalletSummary from './component/WalletSummary';
 
 function App() {
   return (
     <>
-      {/* buat Routes */}
-  
-          {/* Tempat untuk komponen  */}
-          {/* Route transaksiItem */}
-          <TransaksiItem />
-          {/* Route KartuRingaksan */}
-          {/* Route Badge */}
-          {/* Route WalletSummary */}
-          
-    
-     
+      {/* Tempat untuk komponen */}
 
-      
+      {/* Route TransaksiItem */}
+      <TransaksiItem />
+
+      {/* Route KartuRingkasan */}
+
+      {/* Route Badge */}
+
+      {/* Route WalletSummary */}
     </>
-  )
+  );
 }
 
-export default App
+export default App;
