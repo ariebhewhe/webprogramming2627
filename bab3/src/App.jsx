@@ -1,9 +1,9 @@
 import './App.css'
 
-// import transaksi Item 
-// import kartu Ringkasan
-// import badge
-// WalletSummary
+import TransaksiItem from './component/TransaksiItem' 
+import KartuRingkasan from './component/KartuRingkasan'
+import { Badge } from 'react-bootstrap'
+import WalletSummary from './component/WalletSummary'
 
 
 function App() {
@@ -12,10 +12,10 @@ function App() {
       {/* buat Routes */}
   
           {/* Tempat untuk komponen  */}
-          {/* Route transaksiItem */}
-          {/* Route KartuRingaksan */}
-          {/* Route Badge */}
-          {/* Route WalletSummary */}
+          <TransaksiItem/>
+          <KartuRingkasan/>
+          <Badge/>
+          <WalletSummary/>
           
     
      
