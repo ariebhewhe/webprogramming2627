@@ -1,5 +1,3 @@
-
- // src/component/LayoutGrid.jsx
 import { Container, Row, Col } from 'react-bootstrap';
 
 export default function LayoutGrid() {
