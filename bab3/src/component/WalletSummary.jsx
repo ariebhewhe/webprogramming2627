@@ -8,7 +8,7 @@ export default function WalletSummary() {
                     <Card.Body>
                         <Card.Title>Catatan Keuangan</Card.Title>
                         <Card.Subtitle>
-                            Bulan Ini <Badge bg="success"></Badge>
+                            Bulan Ini <Badge bg="success">Aktif</Badge>
                         </Card.Subtitle>
                         <Card.Text>
                             Total Pengeluaran: <strong>Rp 1.250.000</strong>
