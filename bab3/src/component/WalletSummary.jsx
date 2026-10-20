@@ -1,4 +1,25 @@
+import { Container, Card, Button, Badge } from 'react-bootstrap';
 
+export default function WalletSummary() {
+    return(
+        <Container className="mt-4">
+            <Card style={{ width: '22rem'}}>
+                <Card>
+                    <Card.Body>
+                        <Card.Title>Catatan Keuangan</Card.Title>
+                        <Card.Subtitle>
+                            Bulan Ini <Badge bg="success"></Badge>
+                        </Card.Subtitle>
+                        <Card.Text>
+                            Total Pengeluaran: <strong>Rp 1.250.000</strong>
+                        </Card.Text>
+                        <Button variant="primary">Tambah Transaksi</Button>
+                    </Card.Body>
+                </Card>
+            </Card>
+        </Container>
+    );
+}
 
 // app.jsx
 // <WalletSummary />
