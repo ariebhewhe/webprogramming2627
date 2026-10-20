@@ -1,4 +1,3 @@
-
 import './App.css';
 import TransaksiItem from './component/TransaksiItem';
 import KartuRingkasan from './component/KartuRingkasan';
@@ -11,20 +10,11 @@ import Badge from './component/Badge';
 function App() {
   return (
     <>
-      {/* Tempat untuk komponen */}
-
-      {/* Route TransaksiItem */}
       <TransaksiItem />
       <KartuRingkasan />
       <WalletSummary />
       <Badge />
 
-      {/* Route KartuRingkasan */}
-
-
-      {/* Route Badge */}
-
-      {/* Route WalletSummary */}
     </>
   );
 }
