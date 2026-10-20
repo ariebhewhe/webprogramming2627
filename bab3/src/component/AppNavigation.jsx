@@ -20,6 +20,15 @@ function AppNavigation() {
             <Nav.Link as={NavLink} to="/laporan">
               Laporan
             </Nav.Link>
+            <Nav.Link as={NavLink} to="/kartu">
+              Kartu Ringkasan
+            </Nav.Link>
+            <Nav.Link as={NavLink} to="/badge">
+              Badge
+            </Nav.Link>
+            <Nav.Link as={NavLink} to="/wallet">
+              Wallet
+            </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
