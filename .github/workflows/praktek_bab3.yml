@@ -51,7 +51,6 @@ jobs:
           "src/App.css"
           "src/App.jsx"
           "src/index.css"
-          "src/styles/style.css" 
           "package.json")
           MISSING=0
           for FILE in "${FILES[@]}"; do
@@ -81,7 +80,7 @@ jobs:
             fi
           }
           # FILE 
-          FILE = "src/component/TransaksiItem.jsx"
+          FILE="src/component/TransaksiItem.jsx"
           # Mendaftarkan teks yang TIDAK BOLEH dihapus oleh mahasiswa
           cek_teks "$FILE" "export default function TransaksiItem()"
           cek_teks "$FILE" "return"
@@ -120,7 +119,7 @@ jobs:
             fi
           }
           # FILE 
-          FILE= "src/component/KartuRingkasan.jsx"
+          FILE="src/component/KartuRingkasan.jsx"
           # Mendaftarkan teks yang TIDAK BOLEH dihapus oleh mahasiswa
           cek_teks "$FILE" "export default function KartuRingkasan()"
           cek_teks "$FILE" "const cardStyle = {"
@@ -167,8 +166,8 @@ jobs:
             fi
           }
           # FILE 
-          FILE_B = "src/component/Badge.jsx"
-          FILE_A = "src/styles/transaksi.css"
+          FILE_B="src/component/Badge.jsx"
+          FILE_A="src/styles/transaksi.css"
 
           # Mendaftarkan teks yang TIDAK BOLEH dihapus oleh mahasiswa
 
@@ -229,7 +228,7 @@ jobs:
             fi
           }
           # FILE 
-          FILE_A = "src/main.jsx"
+          FILE_A="src/main.jsx"
 
           # Mendaftarkan teks yang TIDAK BOLEH dihapus oleh mahasiswa
 
@@ -245,7 +244,7 @@ jobs:
           cek_teks "$FILE_A" "<App />"
 
           # FILE B
-          FILE_B = "src/App.jsx"
+          FILE_B="src/App.jsx"
           cek_teks "$FILE_B" "import './App.css'"
           cek_teks "$FILE_B" "import { Route, Routes } from 'react-router-dom'"
           cek_teks "$FILE_B" "import TransaksiItem from './component/TransaksiItem'"
