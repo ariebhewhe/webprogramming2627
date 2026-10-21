@@ -8,6 +8,7 @@ import AppNavigation from './component/AppNavigation'
 import LayoutGrid from './component/LayoutGrid'
 import CardStatusDemo from './component/CardStatusDemo'
 import HeaderBanner from './component/HeaderBanner'
+import TransactionManager from './component/TransactionManager'
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path='/HeaderBanner' element={ <HeaderBanner/>  } />
         <Route path='/CardStatusDemo' element={ <CardStatusDemo/> } />
         <Route path='/AppNavigation' element={ <AppNavigation/> } />
+        <Route path='/TransactionManager' element={ <TransactionManager/> } />
       </Routes>
     </>
   );

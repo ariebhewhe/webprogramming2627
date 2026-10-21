@@ -1,53 +1,49 @@
-import { useState } from 'react';
-import { Form, InputGroup, Modal, Button, Table, ProgressBar } from 'react-bootstrap';
+import {useState} from 'react'
+import {Form, InputGroup, Modal, Button, Table, ProgressBar} from 'react-bootstrap'
 
 function TransactionManager() {
-  const [show, setShow] = useState(false);
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
+  const [show, setShow] = useState(false)
+  const handleClose = () => setShow(false)
+  const handleShow = () => setShow(true)
 
   return (
     <div className="container mt-4">
       <div className="d-flex justify-content-between align-items-center mb-3">
         <h3>Penggunaan Anggaran</h3>
-        <Button variant="success" onClick={handleShow}>
-          + Tambah Transaksi
-        </Button>
+        <Button variant="primary" onClick={handleShow}>Tambah Transaksi</Button>
       </div>
 
-      <ProgressBar now={75} label="75%" variant="warning" className="mb-4" />
+      <ProgressBar now={60} label="60%" className="mb-4" />
 
-      <Table striped bordered hover responsive>
+      <Table striped bordered hover>
         <thead>
           <tr>
-            <th>#</th>
+            <th>No</th>
             <th>Keterangan</th>
-            <th>Kategori</th>
-            <th>Nominal</th>
+            <th>Jumlah</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td>1</td>
             <td>Belanja Bulanan</td>
-            <td>Pengeluaran</td>
-            <td>Rp 750.000</td>
+            <td>Rp 500.000</td>
           </tr>
         </tbody>
       </Table>
 
-      <Modal show={show} onHide={handleClose} centered>
+      <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
-          <Modal.Title>Catat Transaksi Baru</Modal.Title>
+          <Modal.Title>Tambah Transaksi</Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <Form>
             <Form.Group className="mb-3">
               <Form.Label>Keterangan</Form.Label>
-              <Form.Control type="text" placeholder="Misal: Bensin" />
+              <Form.Control type="text" placeholder="Masukkan keterangan" />
             </Form.Group>
             <Form.Group className="mb-3">
-              <Form.Label>Nominal</Form.Label>
+              <Form.Label>Jumlah</Form.Label>
               <InputGroup>
                 <InputGroup.Text>Rp</InputGroup.Text>
                 <Form.Control type="number" placeholder="0" />
@@ -57,15 +53,15 @@ function TransactionManager() {
         </Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={handleClose}>
-            Batal
+            Tutup
           </Button>
           <Button variant="primary" onClick={handleClose}>
-            Simpan Transaksi
+            Simpan
           </Button>
         </Modal.Footer>
       </Modal>
     </div>
-  );
+  )
 }
 
-export default TransactionManager;
+export default TransactionManager
