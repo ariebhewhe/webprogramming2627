@@ -21,5 +21,5 @@ function App() {
     </>
   );
 }
-
+<AppNavigation />
 export default App;

@@ -1,17 +1,15 @@
-import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
+import { Navbar, Nav, NavDropdown, Container} from 'react-bootstrap'
 import { NavLink } from 'react-router-dom';
 
-function AppNavigation() {
+function AppNavigation(){
   return (
-    <Navbar bg="dark" variant="dark" expand="sm" className="site-navbar">
-      <Container fluid>
-        <Navbar.Brand as={NavLink} to="/">
-          Catatan Keuangan
-        </Navbar.Brand>
+    <Navbar bg='dark' variant='dark' expand='lg' className='mb-4'>
+      <Container>
+        <Navbar.Brand as={NavLink} to='/'>Catatan Keuangan</Navbar.Brand>
 
         <Navbar.Toggle aria-controls="main-navigation" />
         <Navbar.Collapse id="main-navigation">
-          <Nav>
+          <Nav className="me-auto">
             <Nav.Link as={NavLink} to="/" end>
               Home
             </Nav.Link>
@@ -49,4 +47,4 @@ function AppNavigation() {
   );
 }
 
-export default AppNavigation;
+export default AppNavigation
