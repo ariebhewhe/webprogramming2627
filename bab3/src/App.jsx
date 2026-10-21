@@ -17,6 +17,7 @@ function App() {
         <Route path='/LayoutGrid' element={ <LayoutGrid/>  } />
         <Route path='/CardStatusDemo' element={ <CardStatusDemo/> } />
         <Route path='/AppNavigation' element={ <AppNavigation/> } />
+        <Route path='/TransactionManager' element={ <TransactionManager/> } />
       </Routes>
     </>
   );
