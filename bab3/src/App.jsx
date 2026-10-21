@@ -6,6 +6,7 @@ import Badge from './component/Badge'
 import WalletSummary from './component/WalletSummary'
 import AppNavigation from './component/AppNavigation'
 import LayoutGrid from './component/LayoutGrid'
+import CardStatusDemo from './component/CardStatusDemo'
 function App() {
   return (
     <>
@@ -17,6 +18,7 @@ function App() {
         <Route path='/wallet' element={ <WalletSummary />} />
         <Route path='/LayoutGrid' element={ <LayoutGrid/>  } />
         <Route path='/HeaderBanner' element={ <HeaderBanner/>  } />
+        <Route path='/CardStatusDemo' element={ <CardStatusDemo/> } />
       </Routes>
     </>
   );
