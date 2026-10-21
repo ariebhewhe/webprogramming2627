@@ -8,10 +8,11 @@ import AppNavigation from './component/AppNavigation'
 import LayoutGrid from './component/LayoutGrid'
 import CardStatusDemo from './component/CardStatusDemo'
 import HeaderBanner from './component/HeaderBanner'
+
 function App() {
   return (
     <>
-      <AppNavigation/>
+      <AppNavigation />
       <Routes>
         <Route path='/transaksi' element={ <TransaksiItem />} />
         <Route path='/kartu' element={ <KartuRingkasan />} />
@@ -20,6 +21,7 @@ function App() {
         <Route path='/LayoutGrid' element={ <LayoutGrid/>  } />
         <Route path='/HeaderBanner' element={ <HeaderBanner/>  } />
         <Route path='/CardStatusDemo' element={ <CardStatusDemo/> } />
+        <Route path='/AppNavigation' element={ <AppNavigation/> } />
       </Routes>
     </>
   );
