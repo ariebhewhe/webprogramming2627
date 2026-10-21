@@ -3,7 +3,6 @@ import { Form, InputGroup, Modal, Button, Table, ProgressBar } from 'react-boots
 
 function TransactionManager() {
   const [show, setShow] = useState(false);
-  const [show, setShow] = useState(false)
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
@@ -74,5 +73,3 @@ function TransactionManager() {
 }
 
 export default TransactionManager;
-
-import {Form, InputGroup, Modal, Button, Table, ProgressBar}
