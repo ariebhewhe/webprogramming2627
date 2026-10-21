@@ -7,6 +7,7 @@ import WalletSummary from './component/WalletSummary'
 import AppNavigation from './component/AppNavigation'
 import LayoutGrid from './component/LayoutGrid'
 import CardStatusDemo from './component/CardStatusDemo'
+import HeaderBanner from './component/HeaderBanner'
 function App() {
   return (
     <>
