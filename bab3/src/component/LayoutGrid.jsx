@@ -1,6 +1,6 @@
 import { Container, Row, Col } from 'react-bootstrap';
 
-export default function LayoutGrid (){
+export default function LayoutGrid(){
     return (
         <Container className="my-4">
             <Row>
