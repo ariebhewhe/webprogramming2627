@@ -16,7 +16,7 @@ function App() {
         <Route path='/HeaderBanner' element={ <HeaderBanner/>  } />
         <Route path='/LayoutGrid' element={ <LayoutGrid/>  } />
         <Route path='/CardStatusDemo' element={ <CardStatusDemo/> } />
-        <Route path='/AppNavigation' element={ <AppNavigation /> } />
+        <Route path='/AppNavigation' element={ <AppNavigation/> } />
       </Routes>
     </>
   );
