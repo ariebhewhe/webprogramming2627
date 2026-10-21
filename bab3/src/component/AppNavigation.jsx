@@ -5,11 +5,9 @@ function AppNavigation() {
   return (
     <Navbar bg="dark" variant="dark" expand="lg" className="mb-4">
       <Container>
-        {/* Brand/Logo terhubung ke halaman utama */}
         <Navbar.Brand as={NavLink} to="/">
           CatatanKeuangan
         </Navbar.Brand>
-
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
@@ -21,6 +19,15 @@ function AppNavigation() {
             </Nav.Link>
             <Nav.Link as={NavLink} to="/laporan">
               Laporan
+            </Nav.Link>
+            <Nav.Link as={NavLink} to="/kartu">
+              Kartu Ringkasan
+            </Nav.Link>
+            <Nav.Link as={NavLink} to="/badge">
+              Badge
+            </Nav.Link>
+            <Nav.Link as={NavLink} to="/wallet">
+              Wallet
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
