@@ -1,13 +1,11 @@
-import { Navbar, Nav, Container } from 'react-bootstrap';
+import { Navbar, Nav, NavDropdown, Container} from 'react-bootstrap'
 import { NavLink } from 'react-router-dom';
 
-function AppNavigation() {
+function AppNavigation(){
   return (
-    <Navbar bg="dark" variant="dark" expand="lg" className="mb-4">
+    <Navbar bg='dark' variant='dark' expand='lg' className='mb-4'>
       <Container>
-        <Navbar.Brand as={NavLink} to="/">
-          CatatanKeuangan
-        </Navbar.Brand>
+        <Navbar.Brand as={NavLink} to='/'>Catatan Keuangan</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
@@ -35,5 +33,5 @@ function AppNavigation() {
     </Navbar>
   );
 }
-
+//home
 export default AppNavigation;
