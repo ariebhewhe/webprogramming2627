@@ -1,5 +1,8 @@
 import { Card, Button, Badge, Alert, Dropdown, ButtonGroup } from 'react-bootstrap';
 
+// Export default function CardStatusDemo()
+// Card.header Card.body Card.title Dropdown.menu
+
 export default function CardStatusDemo() {
   return (
     <Card className="shadow-sm" style={{ width: '24rem' }}>
