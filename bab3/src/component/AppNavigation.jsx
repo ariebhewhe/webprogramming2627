@@ -1,32 +1,30 @@
-import { Navbar, Nav, Container } from 'react-bootstrap';
-import { NavLink } from 'react-router-dom';
+import { Card, Button, Badge, Alert, Dropdown, ButtonGroup } from
+'react-bootstrap';
 
-function AppNavigation() {
+Export default function CardStatusDemo() {
   return (
-    <Navbar bg="dark" variant="dark" expand="lg" className="mb-4">
-      <Container>
-        {/* Brand/Logo terhubung ke halaman utama */}
-        <Navbar.Brand as={NavLink} to="/">
-          CatatanKeuangan
-        </Navbar.Brand>
-
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
-            <Nav.Link as={NavLink} to="/">
-              Beranda
-            </Nav.Link>
-            <Nav.Link as={NavLink} to="/transaksi">
-              Transaksi
-            </Nav.Link>
-            <Nav.Link as={NavLink} to="/laporan">
-              Laporan
-            </Nav.Link>
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
+    <Card className="shadow-sm style={{ width: '24rem' }}">
+      <Card.Header className="d-flex justify-content-between align-items-center">
+        <span>Laporan Dompet</span>
+        <Badge bg="success">Aktif</Badge>
+      </Card.Header>
+      <Card.Body>
+        <Alert variant="info" className="py-2">
+          Anggaran tersisa dalam batas aman.
+        </Alert>
+        <Card.Title className="fs-3">Rp 3.450.000</Card.Title>
+        <Card.Text className="text-muted">
+          Total pemasukan bulan ini telah melebihi target.
+        </Card.Text>
+        <Dropdown as={ButtonGroup}>
+          <Button variant="primary">Ekspor Laporan</Button>
+          <Dropdown.Toggle split variant="primary" id="dropdown-split-basic" />
+          <Dropdown.Menu>
+            <Dropdown.Item href="#/pdf">Format PDF</Dropdown.Item>
+            <Dropdown.Item href="#/excel">Format Excel</Dropdown.Item>
+          </Dropdown.Menu>
+        </Dropdown>
+      </Card.Body>
+    </Card>
   );
 }
-
-export default AppNavigation;
