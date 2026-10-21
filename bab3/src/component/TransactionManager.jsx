@@ -72,5 +72,5 @@ function TransactionManager() {
     </div>
   );
 }
-
+const [show, setShow] = useState(false)
 export default TransactionManager;
