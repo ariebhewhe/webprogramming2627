@@ -13,6 +13,7 @@ function App() {
         <Route path='/kartu' element={ <KartuRingkasan />} />
         <Route path='/badge' element={ <Badge />} />
         <Route path='/wallet' element={ <WalletSummary />} />
+        <Route path='/LayoutGrid' element={ <LayoutGrid/>  } />
       </Routes>
     </>
   );
