@@ -18,6 +18,4 @@ function App() {
   );
 }
 
-export default App
-
-//aaaa
+export default App;
