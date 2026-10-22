@@ -1,7 +1,7 @@
 // src/component/CardStatusDemo.jsx
 import { Card, Button, Badge, Alert, Dropdown, ButtonGroup } from 'react-bootstrap';
 
-export default function CardStatusDemo() {
+Export default function CardStatusDemo() {
   return (
     <div className="container mt-4">
       <Card>
