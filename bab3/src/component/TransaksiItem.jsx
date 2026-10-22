@@ -7,3 +7,8 @@ export default function TransaksiItem() {
     </div>
   );
 }
+
+// App.jsx
+//  <TransaksiItem />
+//  <TransaksiItem />
+//  <TransaksiItem />
