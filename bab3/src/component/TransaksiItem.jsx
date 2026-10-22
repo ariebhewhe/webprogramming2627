@@ -1,5 +1,7 @@
-// src/component/TransaksiItem.jsx
-// src/component/TransaksiItem.jsx
+// App.jsx
+//  <TransaksiItem />
+//  <TransaksiItem />
+//  <TransaksiItem />
 export default function TransaksiItem() {
   return (
     <div style={{ backgroundColor: '#f8f9fa', padding: '15px', borderRadius: '8px' }}>
@@ -8,7 +10,3 @@ export default function TransaksiItem() {
     </div>
   );
 }
-// App.jsx
-//  <TransaksiItem />
-//  <TransaksiItem />
-//  <TransaksiItem />
