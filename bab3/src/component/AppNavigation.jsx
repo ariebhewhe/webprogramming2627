@@ -1,8 +1,8 @@
 // src/component/AppNavigation.jsx
-import { Navbar, Nav, NavDropdown, Container } from 'react-bootstrap';
+import { Navbar, Nav, NavDropdown, Container} from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
 
-function AppNavigation() {
+function AppNavigation(){
   return (
     <Navbar bg='dark' variant='dark' expand='lg' className='mb-4'>
       <Container>
@@ -18,6 +18,8 @@ function AppNavigation() {
               <NavDropdown.Item as={NavLink} to='/kartu'>KartuRingkasan</NavDropdown.Item>
               <NavDropdown.Item as={NavLink} to='/LayoutGrid'>LayoutGrid</NavDropdown.Item>
               <NavDropdown.Item as={NavLink} to='/wallet'>WalletSummary</NavDropdown.Item>
+              <NavDropdown.Item as={NavLink} to='/Transaksi'>Transaksi</NavDropdown.Item>
+              <NavDropdown.Item as={NavLink} to='/Badge'>Badge</NavDropdown.Item>
             </NavDropdown>
           </Nav>
         </Navbar.Collapse>
@@ -26,4 +28,4 @@ function AppNavigation() {
   );
 }
 
-export default AppNavigation;
+export default  AppNavigation;
