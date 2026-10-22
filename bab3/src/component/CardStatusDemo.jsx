@@ -5,11 +5,11 @@ export default function CardStatusDemo() {
   return (
     <div className="container mt-4">
       <Card>
-        <Card.header>
+        <Card.Header>
           <span>Header Status</span>
           <Badge bg="secondary">Info</Badge>
-        </Card.header>
-        <Card.body>
+        </Card.Header>
+        <Card.Body>
           <Card.Title>Card.title</Card.Title>
           <p>Ini adalah contoh komponen Card Status Demo.</p>
           <Dropdown as={ButtonGroup}>
@@ -19,7 +19,7 @@ export default function CardStatusDemo() {
               <Dropdown.Item href="#/action-1">Dropdown.menu</Dropdown.Item>
             </Dropdown.Menu>
           </Dropdown>
-        </Card.body>
+        </Card.Body>
       </Card>
     </div>
   );
