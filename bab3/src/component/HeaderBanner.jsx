@@ -1,7 +1,4 @@
-// src/component/HeaderBanner.jsx
-import { Container } from 'react-bootstrap';
-
-export default function HeaderBanner() {
+function HeaderBanner() {
   return (
     <div className="p-5 mb-4 bg-light rounded-3 border">
       <Container fluid className="py-3">

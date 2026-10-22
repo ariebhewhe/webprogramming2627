@@ -1,33 +1,11 @@
-// src/component/TransactionManager.jsx
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { Form, InputGroup, Modal, Button, Table, ProgressBar } from 'react-bootstrap';
 
 function TransactionManager() {
   const [show, setShow] = useState(false);
-  const [dataTransaksi, setDataTransaksi] = useState([]);
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
-
-  // Sintaks Modern Async/Await untuk mengambil data transaksi
-  const ambilDataAsync = async () => {
-    try {
-      const response = await fetch('https://api.example.com/transaksi');
-      if (!response.ok) {
-        throw new Error('Gagal mengambil data dari server');
-      }
-      const data = await response.json();
-      console.log('Data diterima:', data);
-      setDataTransaksi(data);
-    } catch (error) {
-      console.error('Error:', error.message);
-    }
-  };
-
-  // Panggil data saat komponen dimuat
-  useEffect(() => {
-    ambilDataAsync();
-  }, []);
 
   return (
     <div className="container mt-4">
@@ -40,7 +18,6 @@ function TransactionManager() {
 
       <ProgressBar now={75} label="75%" variant="warning" className="mb-4" />
 
-      {/* Tabel Data Transaksi */}
       <Table striped bordered hover responsive>
         <thead>
           <tr>
@@ -60,7 +37,6 @@ function TransactionManager() {
         </tbody>
       </Table>
 
-      {/* Modal Form Tambah Transaksi */}
       <Modal show={show} onHide={handleClose} centered>
         <Modal.Header closeButton>
           <Modal.Title>Catat Transaksi Baru</Modal.Title>
@@ -71,7 +47,6 @@ function TransactionManager() {
               <Form.Label>Keterangan</Form.Label>
               <Form.Control type="text" placeholder="Misal: Bensin" />
             </Form.Group>
-
             <Form.Group className="mb-3">
               <Form.Label>Nominal</Form.Label>
               <InputGroup>
