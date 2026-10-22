@@ -12,7 +12,7 @@ import CardStatusDemo from './component/CardStatusDemo';
 function App() {
   return (
     <>
-      <AppNavigation/>
+      <AppNavigation />
       <Routes>
         <Route path='/transaksi' element={ <TransaksiItem />} />
         <Route path='/kartu' element={ <KartuRingkasan />} />
