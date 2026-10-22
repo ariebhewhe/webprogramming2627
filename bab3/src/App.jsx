@@ -18,6 +18,7 @@ function App() {
         <Route path='/badge' element={ <Badge />} />
         <Route path='/wallet' element={ <WalletSummary />} />
         <Route path='/LayoutGrid' element={ <LayoutGrid/>  } />
+        <Route path='/HeaderBanner' element={ <HeaderBanner/>  } />
       </Routes>
     </>
   );
