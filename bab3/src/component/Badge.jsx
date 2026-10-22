@@ -5,4 +5,4 @@ export default function Badge({ tipe, children }) {
    return <span className={className}>{children}</span>;
 }
 
-// Cara pakai: <Badge tipe="Pemasukan">+ Rp 50.000</Badge> misal pada app.jsx
+// Cara pakai: <Badge tipe="Pemasukan">+ Rp 50.000</Badge> misal pada app.jsx 
