@@ -1,30 +1,23 @@
-import { Card, Button, Badge, Alert, Dropdown, ButtonGroup } from
-'react-bootstrap';
+// src/component/CardStatusDemo.jsx
+import { Card, Button, Badge, Alert, Dropdown, ButtonGroup } from 'react-bootstrap';
 
 export default function CardStatusDemo() {
   return (
-    <Card className="shadow-sm style={{ width: '24rem' }}">
-      <Card.Header className="d-flex justify-content-between align-items-center">
-        <span>Laporan Dompet</span>
-        <Badge bg="success">Aktif</Badge>
-      </Card.Header>
-      <Card.Body>
-        <Alert variant="info" className="py-2">
-          Anggaran tersisa dalam batas aman.
-        </Alert>
-        <Card.Title className="fs-3">Rp 3.450.000</Card.Title>
-        <Card.Text className="text-muted">
-          Total pemasukan bulan ini telah melebihi target.
-        </Card.Text>
-        <Dropdown as={ButtonGroup}>
-          <Button variant="primary">Ekspor Laporan</Button>
-          <Dropdown.Toggle split variant="primary" id="dropdown-split-basic" />
-          <Dropdown.Menu>
-            <Dropdown.Item href="#/pdf">Format PDF</Dropdown.Item>
-            <Dropdown.Item href="#/excel">Format Excel</Dropdown.Item>
-          </Dropdown.Menu>
-        </Dropdown>
-      </Card.Body>
-    </Card>
+    <div className="container mt-4">
+      <Card>
+        <Card.Header>Header Status</Card.Header>
+        <Card.Body>
+          <Card.Title>Card Title Demo</Card.Title>
+          <p>Ini adalah contoh komponen Card Status Demo.</p>
+          <Dropdown as={ButtonGroup}>
+            <Button variant="success">Aksi</Button>
+            <Dropdown.Toggle split variant="success" id="dropdown-split-basic" />
+            <Dropdown.Menu>
+              <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
+            </Dropdown.Menu>
+          </Dropdown>
+        </Card.Body>
+      </Card>
+    </div>
   );
 }
