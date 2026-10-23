@@ -1,0 +1,26 @@
+// src/component/CardStatusDemo.jsx
+import { Card, Button, Badge, Alert, Dropdown, ButtonGroup } from 'react-bootstrap';
+
+Export default function CardStatusDemo() {
+  return (
+    <div className="container mt-4">
+      <Card>
+        <Card.header>
+          <span>Header Status</span>
+          <Badge bg="secondary">Info</Badge>
+        </Card.header>
+        <Card.body>
+          <Card.Title>Card.title</Card.Title>
+          <p>Ini adalah contoh komponen Card Status Demo.</p>
+          <Dropdown as={ButtonGroup}>
+            <Button variant="success">Aksi</Button>
+            <Dropdown.Toggle split variant="success" id="dropdown-split-basic" />
+            <Dropdown.Menu>
+              <Dropdown.Item href="#/action-1">Dropdown.menu</Dropdown.Item>
+            </Dropdown.Menu>
+          </Dropdown>
+        </Card.body>
+      </Card>
+    </div>
+  );
+}
