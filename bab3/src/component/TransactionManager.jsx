@@ -70,3 +70,5 @@ function TransactionManager() {
 }
 
 export default TransactionManager;
+
+/*komentar*/
