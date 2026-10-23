@@ -1,4 +1,5 @@
 // src/component/AppNavigation.jsx
+// komentar
 import { Navbar, Nav, NavDropdown, Container} from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
 
