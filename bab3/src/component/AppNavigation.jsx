@@ -11,7 +11,7 @@ function AppNavigation(){
           <Nav className="me-auto">
             <Nav.Link as={NavLink} to="/">Home</Nav.Link>
             <Nav.Link as={NavLink} to="/transaksi">Transaksi</Nav.Link>
-            <NavDropdown title="Menu Lainnya" id="basic-nav-dropdown">
+            <NavDropdown title="Dropdown" id="basic-nav-dropdown">
               <NavDropdown.Item as={NavLink} to="/badge">Badge</NavDropdown.Item>
               <NavDropdown.Item as={NavLink} to="/CardStatusDemo">CardStatusDemo</NavDropdown.Item>
               <NavDropdown.Item as={NavLink} to="/HeaderBanner">HeaderBanner</NavDropdown.Item>
