@@ -15,6 +15,7 @@ jobs:
     defaults:
       run:
         working-directory: ./bab3
+        
 
     steps:
       - name: Mengambil kode mahasiswa (beserta seluruh riwayat commit)
@@ -347,9 +348,9 @@ jobs:
           fi
       
       # ---------------------------------------------------------
-      # STEP 8: Instalasi React Bootstrap & Bootstrap
+      # STEP 8: 
       # ---------------------------------------------------------
-      - name: 8.  Jumbotron pada Bootstrap Modern
+      - name: 8.  CardStatusDemo
         run: |
           ERROR=0
           # Fungsi pembantu untuk memindai teks
@@ -502,6 +503,113 @@ jobs:
             echo "✅ AMAN: Struktur deklarasi sudah sesuai dengan materi"
             exit 0
           fi
+      
+      # ---------------------------------------------------------
+      # STEP 11: Internal CSS (Variable Object)
+      # ---------------------------------------------------------
+      - name: 11.GET API Konsep Promise
+        run: |
+          ERROR=0
+          # Fungsi pembantu untuk memindai teks
+          cek_teks() {
+            local file=$1
+            local teks_wajib=$2
+            # grep akan mencari teks di dalam file. Jika tidak ketemu, maka ERROR
+            if ! grep -q "$teks_wajib" "$file"; then
+              echo "❌ PELANGGARAN di $file: Belum ada berkas ini '$teks_wajib'"
+              ERROR=1
+            fi
+          }
+
+          # FILE 
+          FILEA="../ServerJson/db.json5"
+          FILEB="src/component/TransactionManager.jsx"
+
+          # Mendaftarkan teks yang TIDAK BOLEH dihapus oleh mahasiswa
+          cek_teks "$FILEA" "posts"
+          cek_teks "$FILEA" "comments"
+          cek_teks "$FILEA" "profile"
+          cek_teks "$FILEA" "transaksi"
+          cek_teks "$FILEA" "{id:1, keterangan:"
+          cek_teks "$FILEA" "Pulsa"
+          cek_teks "$FILEA" "Makan siang"
+          cek_teks "$FILEA" "kategori"
+          cek_teks "$FILEA" "nominal"
+
+          cek_teks "$FILEB" "import { useState, useEffect } from 'react'"
+          cek_teks "$FILEB" "const [transaksi, setTransaksi] = useState([])"
+          cek_teks "$FILEB" "const ambilData = () => {"
+          cek_teks "$FILEB" "fetch('http://localhost:3000/transaksi')"
+          cek_teks "$FILEB" ".then ((response) => response.json())"
+          cek_teks "$FILEB" ".then((data) => {"
+          cek_teks "$FILEB" "console.log('Data diterima:', data)"
+          cek_teks "$FILEB" "setTransaksi(data)"
+          cek_teks "$FILEB" ".catch((error) => {"
+          cek_teks "$FILEB" "useEffect(() => {"
+          cek_teks "$FILEB" "ambilData();"
+          cek_teks "$FILEB" "transaksi.map("
+          cek_teks "$FILEB" "<tr key={item.id || index}>"
+          cek_teks "$FILEB" "<td>{index + 1}</td>"
+          cek_teks "$FILEB" "<td>{item.keterangan}</td>"
+          cek_teks "$FILEB" "<td>{item.kategori}</td>"
+          cek_teks "$FILEB" " <td>{item.nominal}</td>"
+          # Cara menggunakannya 
+        
+
+          if [ $ERROR -eq 1 ]; then
+            echo ""
+            echo "Status: Struktur tidak boleh dimodifikasi!"
+            exit 1
+          else
+            echo ""
+            echo "✅ AMAN: Struktur deklarasi sudah sesuai"
+            exit 0
+          fi
+      # ---------------------------------------------------------
+      # STEP 12: Internal CSS (Variable Object)
+      # ---------------------------------------------------------
+      - name: 12.Async / Await 
+        run: |
+          ERROR=0
+          # Fungsi pembantu untuk memindai teks
+          cek_teks() {
+            local file=$1
+            local teks_wajib=$2
+            # grep akan mencari teks di dalam file. Jika tidak ketemu, maka ERROR
+            if ! grep -q "$teks_wajib" "$file"; then
+              echo "❌ PELANGGARAN di $file: Anda menghapus atau mengubah deklarasi '$teks_wajib'"
+              ERROR=1
+            fi
+           }
+          # FILE 
+          FILEB="src/component/TransactionManager.jsx"
+
+          # Mendaftarkan teks yang TIDAK BOLEH dihapus oleh mahasiswa
+
+          cek_teks "$FILEB" "const ambilDataAsync = async () =>{"
+          cek_teks "$FILEB" "try {"
+          cek_teks "$FILEB" "const response = await fetch('http://localhost:3000/transaksi');"
+          cek_teks "$FILEB" "const ambilData = () => {"
+          cek_teks "$FILEB" "fetch('http://localhost:3000/transaksi')"
+          cek_teks "$FILEB" "if (!response.ok) {"
+          cek_teks "$FILEB" ".then((data) => {"
+          cek_teks "$FILEB" "throw new Error ('Gagal mengambil data dari server')"
+          cek_teks "$FILEB" "const data = await response.json()"
+          cek_teks "$FILEB" "console.log ('Data diterima:', data)"
+          cek_teks "$FILEB" "setTransaksi(data)"
+          cek_teks "$FILEB" "console.error('Error:', error.message)"
+          cek_teks "$FILEB" " ambilDataAsync();"
+          # Cara menggunakannya 
+          if [ $ERROR -eq 1 ]; then
+            echo ""
+            echo "Status: Struktur tidak boleh dimodifikasi!"
+            exit 1
+          else
+            echo ""
+            echo "✅ AMAN: Struktur deklarasi sudah sesuai"
+            exit 0
+          fi
+      
 
       
 
