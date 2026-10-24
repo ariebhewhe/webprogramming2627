@@ -2,12 +2,21 @@
   background-color: #d4edda;
   color: #155724;
   padding: 6px 12px;
-  border-radius: 4px;
+  text-align: center;
 }
 
 .badge-pengeluaran {
   background-color: #f8d7da;
   color: #721c24;
   padding: 6px 12px;
-  border-radius: 4px;
+  text-align: center;
+}
+
+.badge-list {
+  width: 100%;
+}
+
+.badge-list > div {
+  width: 100%;
+  box-sizing: border-box;
 }
