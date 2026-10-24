@@ -1,20 +1,19 @@
 {
-  posts: [
+  "transaksi": [
+    {id:1, keterangan: "Gaji Bulanan", kategori: "Pemasukan", nominal: 2500000},
+    {id:2, keterangan: "Pulsa", kategori: "Pengeluaran", nominal: 50000},
+    {id:3, keterangan: "Makan siang", kategori: "Pengeluaran", nominal: 25000},
+    {id:4, keterangan: "Bayar Listrik", kategori: "Pengeluaran", nominal: 300000}
+  ],
+  "posts": [
     { id: "1", title: "a title", views: 100 },
-    { id: "2", title: "another title", views: 200 },
+    { id: "2", title: "another title", views: 200 }
   ],
-  comments: [
+  "comments": [
     { id: "1", text: "a comment about post 1", postId: "1" },
-    { id: "2", text: "another comment about post 1", postId: "1" },
+    { id: "2", text: "another comment about post 1", postId: "1" }
   ],
-  profile: {
-    name: "typicode",
-  },
-   transaksi: [
-    { id:1, keterangan:"Belanja Bulanan", kategori:"pengeluaran", nominal:"Rp. 759.000" },
-    { id:2, keterangan:"Pulsa", kategori: "pengeluaran", nominal : "Rp. 100.000" },
-    { id:3,keterangan:"Makan siang", kategori: "pengeluaran",nominal : "Rp. 20.000" },
-    { id:4,keterangan:"Makan Sore", kategori: "pengeluaran",nominal : "Rp. 30.000" },
-  ],
-
+  "profile": {
+    name: "typicode"
+  }
 }

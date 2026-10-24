@@ -1,0 +1,7 @@
+{
+  "transaksi": [
+    {id:1, keterangan: "Gaji Bulanan", kategori: "Pemasukan", nominal: 2500000},
+    {id:2, keterangan: "Beli Buku", kategori: "Pengeluaran", nominal: 150000},
+    {id:3, keterangan: "Bayar Listrik", kategori: "Pengeluaran", nominal: 300000}
+  ]
+}
