@@ -10,6 +10,12 @@
   profile: {
     name: "typicode",
   },
+
+  transaksi: [
+    {id:1, keterangan: "Belanja Bulanan", kategori: "pengeluaran", nominal: "Rp. 759.000" },
+    {id:2, keterangan: "Pulsa", kategori: "pengeluaran", nominal: "Rp. 100.000" },
+    {id:3, keterangan: "Makan siang", kategori: "pengeluaran", nominal: "Rp. 20.000" },
+  ],
    transaksi: [
     { id:1, keterangan:"Belanja Bulanan", kategori:"pengeluaran", nominal:"Rp. 759.000" },
     { id:2, keterangan:"Pulsa", kategori: "pengeluaran", nominal : "Rp. 100.000" },
