@@ -367,18 +367,18 @@ jobs:
           FILE_A="src/component/CardStatusDemo.jsx"
           FILE_B="src/App.jsx"
 
-          cek_teks "$FILE_A" "import { Card, Button, Badge, Alert, Dropdown, ButtonGroup } from 'react-bootstrap';"
-          cek_teks "$FILE_A" "Export default function CardStatusDemo()"
-          cek_teks "$FILE_A" "Card.header"
+          cek_teks "$FILE_A" "import { Container, Card, Button, Badge, Alert, Dropdown, ButtonGroup } from 'react-bootstrap';"
+          cek_teks "$FILE_A" "export default function CardStatusDemo()"
+          cek_teks "$FILE_A" "Card.Header"
           cek_teks "$FILE_A" "<span>"
           cek_teks "$FILE_A" "<Badge"
-          cek_teks "$FILE_A" "Card.body"
+          cek_teks "$FILE_A" "Card.Body"
           cek_teks "$FILE_A" "Alert"
-          cek_teks "$FILE_A" "Card.title"
+          cek_teks "$FILE_A" "Card.Title"
           cek_teks "$FILE_A" "Dropdown"
           cek_teks "$FILE_A" "Button"
           cek_teks "$FILE_A" "Dropdown.Toggle"
-          cek_teks "$FILE_A" "Dropdown.menu"
+          cek_teks "$FILE_A" "Dropdown.Menu"
           cek_teks "$FILE_B" "<Route path='/CardStatusDemo' element={ <CardStatusDemo/> } />"
           
           if [ $ERROR -eq 1 ]; then
@@ -466,7 +466,6 @@ jobs:
           FILE_A="src/component/TransactionManager.jsx"
           FILE_B="src/App.jsx"
 
-          cek_teks "$FILE_A" "import {useState} from 'react'"
           cek_teks "$FILE_A" "import {Form, InputGroup, Modal, Button, Table, ProgressBar}"
           cek_teks "$FILE_A" "function TransactionManager("
           cek_teks "$FILE_A" "const [show, setShow] = useState(false)"
@@ -515,7 +514,9 @@ jobs:
             local file=$1
             local teks_wajib=$2
             # grep akan mencari teks di dalam file. Jika tidak ketemu, maka ERROR
+
             if ! grep -Fq "$teks_wajib" "$file"; then
+
               echo "❌ PELANGGARAN di $file: Belum ada berkas ini '$teks_wajib'"
               ERROR=1
             fi
@@ -523,7 +524,10 @@ jobs:
 
           # FILE 
           FILEA="../ServerJson/db.json5"
+
+          FILEB="src/component/KartuRingkasan.jsx"
           FILEB="src/component/TransactionManager.jsx"
+
 
           # Mendaftarkan teks yang TIDAK BOLEH dihapus oleh mahasiswa
           cek_teks "$FILEA" "posts"
@@ -535,6 +539,9 @@ jobs:
           cek_teks "$FILEA" "Makan siang"
           cek_teks "$FILEA" "kategori"
           cek_teks "$FILEA" "nominal"
+
+
+          cek_teks "$FILEB" "nominal"
 
           cek_teks "$FILEB" "import { useState, useEffect } from 'react'"
           cek_teks "$FILEB" "const [transaksi, setTransaksi] = useState([])"
@@ -582,7 +589,11 @@ jobs:
             fi
            }
           # FILE 
+
+          FILEB="src/component/KartuRingkasan.jsx"
           FILEB="src/component/TransactionManager.jsx"
+          FILEC="src/App.jsx"
+
 
           # Mendaftarkan teks yang TIDAK BOLEH dihapus oleh mahasiswa
 
@@ -598,8 +609,10 @@ jobs:
           cek_teks "$FILEB" "console.log ('Data diterima:', data)"
           cek_teks "$FILEB" "setTransaksi(data)"
           cek_teks "$FILEB" "console.error('Error:', error.message)"
+
+          cek_teks "$FILEB" " ambilDataAsync();"
           cek_teks "$FILEB" "ambilDataAsync();"
-          cek_teks "$FILEB" "<AppNavigation />"
+          cek_teks "$FILEC" "<AppNavigation />"
           # Cara menggunakannya 
           if [ $ERROR -eq 1 ]; then
             echo ""
