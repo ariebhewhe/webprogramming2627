@@ -69,5 +69,5 @@ function TransactionManager() {
     </div>
   );
 }
-
+// komentar
 export default TransactionManager;
