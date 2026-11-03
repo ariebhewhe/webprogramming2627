@@ -2,8 +2,10 @@ import {useState} from 'react'
 import {Form, InputGroup, Modal, Button, Table, ProgressBar} from 'react-bootstrap'
 
 function TransactionManager() {
+  // const s = useState(false)
   const [show, setShow] = useState(false);
-
+  // const t = useState([])
+  const [transaksi, setTransaksi] = useState([])
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
