@@ -24,6 +24,10 @@ function AppNavigation(){
               <NavDropdown.Item as={NavLink} to="/kartu">KartuRingkasan</NavDropdown.Item>
               <NavDropdown.Item as={NavLink} to="/layoutgrid">LayoutGrid</NavDropdown.Item>
               <NavDropdown.Item as={NavLink} to="/wallet">WalletSummary</NavDropdown.Item>
+              <NavDropdown.Item as={NavLink} to="/DaftarTugas">DaftarTugas</NavDropdown.Item>
+              <NavDropdown.Item as={NavLink} to="/FormTambahTransaksi">Form Tambah Transaksi</NavDropdown.Item>
+              <NavDropdown.Item as={NavLink} to="/PostListFetch">Post List Fetch</NavDropdown.Item>
+              <NavDropdown.Item as={NavLink} to="/PostListAxios">Post list Axios</NavDropdown.Item>
             </NavDropdown>
           </Nav>
         </Navbar.Collapse>
