@@ -20,6 +20,11 @@ function AppNavigation(){
                     <NavDropdown.Item as={NavLink} to='/karturingkasan'>KartuRingkasan</NavDropdown.Item>
                     <NavDropdown.Item as={NavLink} to='/layoutgrid'>LayoutGrid</NavDropdown.Item>
                     <NavDropdown.Item as={NavLink} to='/walletsummary'>WalletSummary</NavDropdown.Item>
+                    <NavDropdown.Divider />
+                    <NavDropdown.Item as={NavLink} to='/daftartransaksi'>DaftarTransaksi</NavDropdown.Item>
+                    <NavDropdown.Item as={NavLink} to='/tabeltransaksidinamis'>TabelTransaksiDinamis</NavDropdown.Item>
+                    <NavDropdown.Item as={NavLink} to='/formtambahtransaksi'>FormTambahTransaksi</NavDropdown.Item>
+                    <NavDropdown.Item as={NavLink} to='/formtambahtransaksipost'>FormTambahTransaksiPost</NavDropdown.Item>
                 </NavDropdown>
             </Nav>
         </Navbar.Collapse>

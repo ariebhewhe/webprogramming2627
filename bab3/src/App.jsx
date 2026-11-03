@@ -16,6 +16,11 @@ import DaftarTugas from './component/DaftarTugas'
 import PostListFetch from './component/PostListFetch'
 import PostListAxios from './component/PostListAxios'
 
+import DaftarTransaksi from './component/DaftarTransaksi'
+import TabelTransaksiDinamis from './component/TabelTransaksiDinamis'
+import FormTambahTransaksi from './component/FormTambahTransaksi'
+import FormTambahTransaksiPost from './component/FormTambahTransaksiPost'
+
 function App() {
   return (
     <>
@@ -44,6 +49,11 @@ function App() {
         <Route path='/KartuRingkasan' element={ <KartuRingkasan/> } />
         <Route path='/LayoutGrid' element={ <LayoutGrid/>  } />
         <Route path='/WalletSummary' element={ <WalletSummary/> } />
+
+        <Route path='/DaftarTransaksi' element={ <DaftarTransaksi/> } />
+        <Route path='/TabelTransaksiDinamis' element={ <TabelTransaksiDinamis/> } />
+        <Route path='/FormTambahTransaksi' element={ <FormTambahTransaksi/> } />
+        <Route path='/FormTambahTransaksiPost' element={ <FormTambahTransaksiPost/> } />
       </Routes>
     </>
   );
