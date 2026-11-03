@@ -35,17 +35,11 @@ function App() {
         <Route path='/CardStatusDemo' element={ <CardStatusDemo/> } />
         <Route path='/TransactionManager' element={ <TransactionManager/> } />
         <Route path='/AppNavigation' element={ <AppNavigation/> } />
-        <Route path="/DaftarTugas" element={<DaftarTugas />} />
-        <Route
-          path="/DaftarTugasFunction"
-          element={<DaftarTugasFunction />}
-        />
-        <Route
-          path="/FormTambahTransaksi"
-          element={<FormTambahTransaksi />}
-        />
-        <Route path="/PostListFetch" element={<PostListFetch />} />
-        <Route path="/PostListAxios" element={<PostListAxios />} />
+        <Route path='/DaftarTugas' element={<DaftarTugas />} />
+        <Route path='/DaftarTugasFunction' element={<DaftarTugasFunction />}/>
+        <Route path='/FormTambahTransaksi' element={<FormTambahTransaksi />}/>
+        <Route path='/PostListFetch' element={<PostListFetch />} />
+        <Route path='/PostListAxios' element={<PostListAxios />} />
       </Routes>
     </>
   )

@@ -8,9 +8,7 @@ function PostListAxios() {
     useEffect(() => {
         const fetchPosts = async () => {
             try {
-                const response = await axios.get(
-                'https://jsonplaceholder.typicode.com/posts'
-                );
+                const response = await axios.get('https://jsonplaceholder.typicode.com/posts');
                 setPosts(response.data);
             } catch (error) {
                 console.error("Terjadi kesalahan jaringan:", error.message);
@@ -26,7 +24,7 @@ function PostListAxios() {
 
     return (
         <ul>
-        {posts.slice(0, 5).map(post => (
+        {posts.slice(0, 100).map(post => (
             <li key={post.id}>{post.title}</li>
         ))}
         </ul>
