@@ -10,6 +10,8 @@ import LayoutGrid from './component/LayoutGrid';
 import TransactionManager from './component/TransactionManager';
 import TransaksiItem from './component/TransaksiItem';
 import WalletSummary from './component/WalletSummary';
+import PostListAxios from './component/PostListAxios';
+
 
 
 function App() {
@@ -31,6 +33,7 @@ function App() {
         <Route path='/CardStatusDemo' element={ <CardStatusDemo/> } />
         <Route path='/AppNavigation' element={ <AppNavigation/> } />
         <Route path='/TransactionManager' element={ <TransactionManager/> } />
+        <Route path='/postlistaxios' element={ <PostListAxios/> } />
       </Routes>
     </>
   );

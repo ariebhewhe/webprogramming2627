@@ -28,6 +28,8 @@ function AppNavigation(){
                             to='/LayoutGrid'>LayoutGrid</NavDropdown.Item>
                             <NavDropdown.Item as={NavLink} 
                             to='/wallet'>WalletSummary</NavDropdown.Item>
+                            <NavDropdown.Item as={NavLink} 
+                            to='/postlistaxios'>Axios Post List</NavDropdown.Item>
                         </NavDropdown>
                     </Nav>
                 </Navbar.Collapse>
