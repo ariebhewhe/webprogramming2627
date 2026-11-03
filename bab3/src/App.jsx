@@ -12,9 +12,9 @@ import WalletSummary from './component/WalletSummary'
 import LayoutGrid from './component/LayoutGrid'
 import AppNavigation from './component/AppNavigation'
 
-import DaftarTugas from './component/DaftarTugas'
-import PostListFetch from './component/PostListFetch'
-import PostListAxios from './component/PostListAxios'
+//import DaftarTugas from './component/DaftarTugas'
+//import PostListFetch from './component/PostListFetch'
+//import PostListAxios from './component/PostListAxios'
 
 function App() {
   return (
@@ -22,16 +22,7 @@ function App() {
       <AppNavigation />
 
       <Routes>
-        <Route path='/' element={
-          <div>
-            <h2>Daftar Tugas</h2>
-            <DaftarTugas />
-            <h2>PostListFetch</h2>
-            <PostListFetch />
-            <h2>PostListAxios</h2>
-            <PostListAxios />
-          </div>
-        } />
+        
         <Route path='/transaksi' element={ <TransaksiItem />} />
         <Route path='/kartu' element={ <KartuRingkasan />} />
         <Route path='/badge' element={ <Badge />} />
@@ -49,3 +40,16 @@ function App() {
   );
 }
 export default App;
+
+
+
+/* <Route path='/' element={
+          <div>
+            <h2>Daftar Tugas</h2>
+            <DaftarTugas />
+            <h2>PostListFetch</h2>
+            <PostListFetch />
+            <h2>PostListAxios</h2>
+            <PostListAxios />
+          </div>
+        } /> */

@@ -515,7 +515,11 @@ jobs:
             local file=$1
             local teks_wajib=$2
             # grep akan mencari teks di dalam file. Jika tidak ketemu, maka ERROR
+<<<<<<< HEAD
             if ! grep -Fq "$teks_wajib" "$file"; then
+=======
+            if ! grep -q "$teks_wajib" "$file"; then
+>>>>>>> 79f62ceced5f567559f18c89d3e95d42300c4256
               echo "❌ PELANGGARAN di $file: Belum ada berkas ini '$teks_wajib'"
               ERROR=1
             fi
@@ -523,7 +527,11 @@ jobs:
 
           # FILE 
           FILEA="../ServerJson/db.json5"
+<<<<<<< HEAD
           FILEB="src/component/TransactionManager.jsx"
+=======
+          FILEB="src/component/KartuRingkasan.jsx"
+>>>>>>> 79f62ceced5f567559f18c89d3e95d42300c4256
 
           # Mendaftarkan teks yang TIDAK BOLEH dihapus oleh mahasiswa
           cek_teks "$FILEA" "posts"
@@ -536,6 +544,10 @@ jobs:
           cek_teks "$FILEA" "kategori"
           cek_teks "$FILEA" "nominal"
 
+<<<<<<< HEAD
+=======
+          cek_teks "$FILEB" "nominal"
+>>>>>>> 79f62ceced5f567559f18c89d3e95d42300c4256
           cek_teks "$FILEB" "import { useState, useEffect } from 'react'"
           cek_teks "$FILEB" "const [transaksi, setTransaksi] = useState([])"
           cek_teks "$FILEB" "const ambilData = () => {"
@@ -582,7 +594,11 @@ jobs:
             fi
            }
           # FILE 
+<<<<<<< HEAD
           FILEB="src/component/TransactionManager.jsx"
+=======
+          FILEB="src/component/KartuRingkasan.jsx"
+>>>>>>> 79f62ceced5f567559f18c89d3e95d42300c4256
 
           # Mendaftarkan teks yang TIDAK BOLEH dihapus oleh mahasiswa
 
@@ -598,8 +614,12 @@ jobs:
           cek_teks "$FILEB" "console.log ('Data diterima:', data)"
           cek_teks "$FILEB" "setTransaksi(data)"
           cek_teks "$FILEB" "console.error('Error:', error.message)"
+<<<<<<< HEAD
           cek_teks "$FILEB" "ambilDataAsync();"
           cek_teks "$FILEB" "<AppNavigation />"
+=======
+          cek_teks "$FILEB" " ambilDataAsync();"
+>>>>>>> 79f62ceced5f567559f18c89d3e95d42300c4256
           # Cara menggunakannya 
           if [ $ERROR -eq 1 ]; then
             echo ""
@@ -615,3 +635,9 @@ jobs:
       
 
       
+<<<<<<< HEAD
+=======
+
+
+      
+>>>>>>> 79f62ceced5f567559f18c89d3e95d42300c4256
