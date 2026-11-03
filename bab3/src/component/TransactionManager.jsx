@@ -1,16 +1,52 @@
-import {useState} from 'react'
-import {Form, InputGroup, Modal, Button, Table, ProgressBar} from 'react-bootstrap'
+//import {useState} from 'react';
+import { useState, useEffect } from 'react';
+import {Form, InputGroup, Modal, Button, Table, ProgressBar} from 'react-bootstrap';
 
-function TransactionManager() {
+import AppNavigation from './AppNavigation'
+
+export default function TransactionManager() {
   // const s = useState(false)
   const [show, setShow] = useState(false);
   // const t = useState([])
   const [transaksi, setTransaksi] = useState([])
+
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
+  const ambilData = () => {
+        fetch('http://localhost:3000/transaksi')
+            .then ((response) => response.json())
+            .then((data) => {
+                console.log('Data diterima:', data);
+                setTransaksi(data);
+            })
+            .catch((error) => {
+                console.error("Gagal mengambil data:", error);
+            });
+    };
+
+    const ambilDataAsync = async () =>{
+        try {
+            const response = await fetch('http://localhost:3000/transaksi');
+            if (!response.ok) {
+                throw new Error ('Gagal mengambil data dari server');
+            }
+            const data = await response.json();
+            console.log ('Data diterima:', data);
+            setTransaksi(data);
+        } catch (error) {
+            console.error('Error:', error.message);
+        }
+    };
+
+    useEffect(() => {
+        ambilData();
+        ambilDataAsync();
+    }, []);
+
   return (
     <div className="container mt-4">
+    { /*<AppNavigation />*/ }
       <div className="d-flex justify-content-between align-items-center mb-3">
         <h3>Penggunaan Anggaran</h3>
         <Button variant="success" onClick={handleShow}>
@@ -29,14 +65,16 @@ function TransactionManager() {
             <th>Nominal</th>
           </tr>
         </thead>
-        <tbody>
-          <tr>
-            <td>1</td>
-            <td>Belanja Bulanan</td>
-            <td>Pengeluaran</td>
-            <td>Rp 750.000</td>
-          </tr>
-        </tbody>
+            <tbody>
+                {transaksi.map((item, index) => (
+                    <tr key={item.id || index}>
+                        <td>{index + 1}</td>
+                        <td>{item.keterangan}</td>
+                        <td>{item.kategori}</td>
+                        <td>{item.nominal}</td>
+                    </tr>
+                ))}
+            </tbody>
       </Table>
 
       <Modal show={show} onHide={handleClose} centered>
@@ -70,7 +108,3 @@ function TransactionManager() {
     </div>
   );
 }
-
-export default TransactionManager;
-
-/*komentar*/

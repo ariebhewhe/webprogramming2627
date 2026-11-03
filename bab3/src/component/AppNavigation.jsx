@@ -1,32 +1,30 @@
-// src/component/AppNavigation.jsx
-// komentar
-import { Navbar, Nav, NavDropdown, Container} from 'react-bootstrap';
+import { Navbar, Nav, NavDropdown, Container} from 'react-bootstrap'
 import { NavLink } from 'react-router-dom';
 
 function AppNavigation(){
   return (
     <Navbar bg='dark' variant='dark' expand='lg' className='mb-4'>
-      <Container>
+    <Container>
         <Navbar.Brand as={NavLink} to='/'>Catatan Keuangan</Navbar.Brand>
-        <Navbar.Toggle aria-controls='basic-navbar-nav' />
-        <Navbar.Collapse id='basic-navbar-nav'>
-          <Nav className='me-auto'>
-            <Nav.Link as={NavLink} to='/'>Home</Nav.Link>
-            <NavDropdown title='Menu' id='basic-nav-dropdown'>
-              <NavDropdown.Item as={NavLink} to='/CardStatusDemo'>CardStatusDemo</NavDropdown.Item>
-              <NavDropdown.Item as={NavLink} to='/HeaderBanner'>HeaderBanner</NavDropdown.Item>
-              <NavDropdown.Item as={NavLink} to='/TransactionManager'>TransactionManager</NavDropdown.Item>
-              <NavDropdown.Item as={NavLink} to='/kartu'>KartuRingkasan</NavDropdown.Item>
-              <NavDropdown.Item as={NavLink} to='/LayoutGrid'>LayoutGrid</NavDropdown.Item>
-              <NavDropdown.Item as={NavLink} to='/wallet'>WalletSummary</NavDropdown.Item>
-              <NavDropdown.Item as={NavLink} to='/Transaksi'>Transaksi</NavDropdown.Item>
-              <NavDropdown.Item as={NavLink} to='/Badge'>Badge</NavDropdown.Item>
-            </NavDropdown>
-          </Nav>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className="me-auto">
+                <Nav.Link as={NavLink} to='/'>Home</Nav.Link>
+                <Nav.Link as={NavLink} to='/transaksi'>Transaksi</Nav.Link>
+                <NavDropdown title="Dropdown" id="basic-nav-dropdown">
+                    <NavDropdown.Item as={NavLink} to='/badge'>Badge</NavDropdown.Item>
+                    <NavDropdown.Item as={NavLink} to='/cardstatusdemo'>CardStatusDemo</NavDropdown.Item>
+                    <NavDropdown.Item as={NavLink} to='/headerbanner'>HeaderBanner</NavDropdown.Item>
+                    <NavDropdown.Item as={NavLink} to='/transactionmanager'>TransactionManager</NavDropdown.Item>
+                    <NavDropdown.Divider />
+                    <NavDropdown.Item as={NavLink} to='/karturingkasan'>KartuRingkasan</NavDropdown.Item>
+                    <NavDropdown.Item as={NavLink} to='/layoutgrid'>LayoutGrid</NavDropdown.Item>
+                    <NavDropdown.Item as={NavLink} to='/walletsummary'>WalletSummary</NavDropdown.Item>
+                </NavDropdown>
+            </Nav>
         </Navbar.Collapse>
-      </Container>
+    </Container>
     </Navbar>
   );
 }
-
 export default  AppNavigation;
