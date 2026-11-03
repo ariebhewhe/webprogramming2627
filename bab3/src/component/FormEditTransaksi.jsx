@@ -16,6 +16,7 @@ function FormEditTransaksi({ dataAwal, onUpdateSuccess, onCancel }) {
         setKategori(dataAwal.kategori);
         setNominal(dataAwal.nominal);
     }, [dataAwal]);
+    
     const handleUpdate = async (e) => {
         e.preventDefault();
         setIsUpdating(true);

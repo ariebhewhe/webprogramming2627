@@ -20,6 +20,7 @@ import DaftarTransaksi from './component/DaftarTransaksi'
 import TabelTransaksiDinamis from './component/TabelTransaksiDinamis'
 import FormTambahTransaksi from './component/FormTambahTransaksi'
 import FormTambahTransaksiPost from './component/FormTambahTransaksiPost'
+import TabelTransaksiDinamisKomplit from './component/TabelTransaksiDinamisKomplit'
 
 function App() {
   return (
@@ -54,6 +55,7 @@ function App() {
         <Route path='/TabelTransaksiDinamis' element={ <TabelTransaksiDinamis/> } />
         <Route path='/FormTambahTransaksi' element={ <FormTambahTransaksi/> } />
         <Route path='/FormTambahTransaksiPost' element={ <FormTambahTransaksiPost/> } />
+        <Route path='/TabelTransaksiDinamisKomplit' element={ <TabelTransaksiDinamisKomplit/> } />
       </Routes>
     </>
   );

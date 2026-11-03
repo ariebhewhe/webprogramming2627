@@ -25,6 +25,7 @@ function AppNavigation(){
                     <NavDropdown.Item as={NavLink} to='/tabeltransaksidinamis'>TabelTransaksiDinamis</NavDropdown.Item>
                     <NavDropdown.Item as={NavLink} to='/formtambahtransaksi'>FormTambahTransaksi</NavDropdown.Item>
                     <NavDropdown.Item as={NavLink} to='/formtambahtransaksipost'>FormTambahTransaksiPost</NavDropdown.Item>
+                    <NavDropdown.Item as={NavLink} to='/tabeltransaksidinamiskomplit'>TabelTransaksiDinamisKomplit</NavDropdown.Item>
                 </NavDropdown>
             </Nav>
         </Navbar.Collapse>
