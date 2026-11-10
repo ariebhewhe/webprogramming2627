@@ -11,6 +11,11 @@ import LayoutGrid from './component/LayoutGrid'
 import HeaderBanner from './component/HeaderBanner'
 import DaftarTugasFunction from './component/DaftarTugasFunction'
 import PostListAxios from './component/PostListAxios'
+import DaftarTransaksi from './component/DaftarTransaksi'
+import TabelTransaksiDinamis from './component/TransaksiDinamis'
+import FormTambahTransaksiPost from './component/FormTambahTransaksiPost'
+import FormEditTransaksi from './component/FormEditTransaksi'
+import TombolHapusDenganModal from './component/TombolHapusDenganModal'
 // import transaksi Item 
 // import kartu Ringkasan
 // import badge
@@ -33,6 +38,11 @@ function App() {
         <Route path='/TransactionManager' element={ <TransactionManager/> } />
         <Route path='/daftarTugas' element={ <DaftarTugasFunction/> } />
         <Route path='/listAxios' element={ <PostListAxios/> } />
+        <Route path='/daftarTransaksi' element={ <DaftarTransaksi/> } />
+        <Route path='/tabelTransaksiDinamis' element={ <TabelTransaksiDinamis/> } />
+        <Route path='/formTambahTransaksiPost' element={ <FormTambahTransaksiPost/> } />
+        <Route path='/formEditTransaksi' element={ <FormEditTransaksi/> } />
+        <Route path='/tombolHapusDenganModal' element={ <TombolHapusDenganModal/> } />
       </Routes>
     </>
   )

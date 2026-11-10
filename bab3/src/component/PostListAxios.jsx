@@ -25,7 +25,7 @@ export default function PostListAxios() {
   if (loading) return <p>Memuat data...</p>;
   return (
     <ul>
-      {posts.slice(0, 5).map(post => (
+      {posts.slice(0, 100).map(post => (
         <li key={post.id}>{post.title}</li>
       ))}
     </ul>

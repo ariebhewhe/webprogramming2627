@@ -23,6 +23,12 @@ function AppNavigation(){
               <NavDropdown.Divider />
               <NavDropdown.Item as={NavLink} to='/daftarTugas'>3.4-DaftarTugas</NavDropdown.Item>
               <NavDropdown.Item as={NavLink} to='/listAxios'>3.5-ListAxios</NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item as={NavLink} to='/daftarTransaksi'>4.2.1-DaftarTransaksi</NavDropdown.Item>
+              <NavDropdown.Item as={NavLink} to='/tabelTransaksiDinamis'>4.2.2-TabelTransaksiDinamis</NavDropdown.Item>
+              <NavDropdown.Item as={NavLink} to='/formTambahTransaksiPost'>4.3.2-FormTambahTransaksiPost</NavDropdown.Item>
+              <NavDropdown.Item as={NavLink} to='/formEditTransaksi'>4.4.2-FormEditTransaksi</NavDropdown.Item>
+              <NavDropdown.Item as={NavLink} to='/tombolHapusDenganModal'>4.5.2-TombolHapusDenganModal</NavDropdown.Item>
             </NavDropdown>
           </Nav>
         </Navbar.Collapse>
